@@ -92,9 +92,11 @@ section {
 .instructions {
   color: #0a5e78;
   font-family: "Merriweather", Georgia, serif;
+  left: 40px;
+  top: 0px;
   font-weight: bold;
+  position: absolute;
   font-size: 1.08em;
-  margin: 0 0 -20px 40px;
   letter-spacing: .1px;
 }
 
@@ -176,7 +178,7 @@ input#usernameinput {
 
 label[for=expirationmonth], label[for=expirationday] {
   position: absolute;
-  text-indent:-9999px;
+  text-indent:-99999px;
 }
 
 /*----- group 3 : credit card selector -----*/
@@ -184,7 +186,7 @@ label[for=expirationmonth], label[for=expirationday] {
 /* hide default radio buttons by moving it off-screen so that it remains accessible to screen readers*/
 input[type=radio] {
     position: absolute;
-    margin-left:-9999px;
+    margin-left:-99999px;
 }
 
 input[type=radio] + label{
