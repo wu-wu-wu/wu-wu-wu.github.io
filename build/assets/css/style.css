@@ -1,5 +1,6 @@
 body {
   font-family: "open sans", helvetica, san-serif;
+  counter-reset: mega-step;
 }
 
 /*----- container including all the content; use to align center -----*/
@@ -45,7 +46,7 @@ header h2 {
 
 /*----- main section including form -----*/
 main {
-  background-color: white;
+  background: #ffffff ;
   border-radius: 0 0 8px 8px;
   padding: 30px 0px 40px 0px;
   width: 600px;
@@ -55,6 +56,7 @@ fieldset {
   border: 0px;
   margin: 0px;
   padding: 0px;
+  position:relative;
 }
 
 /*----- each fieldset's colored content section -----*/
@@ -65,6 +67,11 @@ section {
   padding: 26px 41px 40px 41px;
   width: 440px;
   position: relative;
+  counter-increment: mega-step;
+}
+
+section {
+  content: counter(mega-step);
 }
 
 /*----- numbered instructions for each fieldset -----*/
@@ -169,7 +176,7 @@ input#usernameinput {
 
 label[for=expirationmonth], label[for=expirationday] {
   position: absolute;
-  text-indent:-999px;
+  text-indent:-9999px;
 }
 
 /*----- group 3 : credit card selector -----*/
@@ -177,7 +184,7 @@ label[for=expirationmonth], label[for=expirationday] {
 /* hide default radio buttons by moving it off-screen so that it remains accessible to screen readers*/
 input[type=radio] {
     position: absolute;
-    margin-left:-999px;
+    margin-left:-9999px;
 }
 
 input[type=radio] + label{
@@ -265,30 +272,6 @@ select {
 margin-top: 4px;
 }
 
-/*----- submit div + button! -----*/
-#submit {
-  margin-top: -17px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 218px;
-}
-
-#submitbutton {
-  color: white;
-  background: none;
-  background-image: linear-gradient(#90a933, #7b992b);
-  box-shadow: inset 0 1px 0px 0 #AABD5F;
-  border-radius: 6px;
-  border-top: 1px solid #90a933;
-  font-family: "Merriweather", Georgia, serif;
-  font-size: 16px;
-  height: 37px;
-  width: 218px;
-  padding: 0;
-  margin-left: 0 auto;
-}
-
-
 /*----- form valid & invalid -----*/
 input:required:invalid {
   background: none;
@@ -350,4 +333,28 @@ input:required:invalid.parsley-error {
 
 .parsley-errors-list.filled {
   opacity: 1;
+}
+
+
+/*----- submit div + button! -----*/
+#submit {
+  margin-top: -17px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 218px;
+}
+
+#submitbutton {
+  color: white;
+  background: none;
+  background-image: linear-gradient(#90a933, #7b992b);
+  box-shadow: inset 0 1px 0px 0 #AABD5F;
+  border-radius: 6px;
+  border-top: 1px solid #90a933;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  height: 37px;
+  width: 218px;
+  padding: 0;
+  margin-left: 0 auto;
 }
