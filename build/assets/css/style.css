@@ -1,0 +1,353 @@
+body {
+  font-family: "open sans", helvetica, san-serif;
+}
+
+/*----- container including all the content; use to align center -----*/
+.container {
+  max-height: 1400px;
+  height: 1260px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding: 0px;
+}
+
+/*----- header, h1 and h2 -----*/
+header {
+  background-color: #0a5e78;
+  background-image: linear-gradient(#177993, #0a5e78);
+  border-radius: 8px 8px 0 0;
+  height: 105px;
+  box-shadow: inset 0px 1px 1px 0 #459fb9;
+  width: 601px;
+  border-top: 1px solid #0a5e78;
+}
+
+header h1 {
+  color: white;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: .03em;
+  padding: 1px 0 0px 40px;
+}
+
+header h2 {
+  color: #b3e3ff;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: .04em;
+  margin-top: -25px;
+  padding: 0px 0 0px 40px;
+}
+
+/*----- main section including form -----*/
+main {
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  padding: 30px 0px 40px 0px;
+  width: 600px;
+}
+
+fieldset {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*----- each fieldset's colored content section -----*/
+section {
+  background-color: #f3f5f5;
+  border-radius: 5px;
+  margin: 1px auto 40px auto;
+  padding: 26px 41px 40px 41px;
+  width: 440px;
+  position: relative;
+}
+
+/*----- numbered instructions for each fieldset -----*/
+.number {
+  color: white;
+  font-family: "Merriweather", Georgia, serif;
+  background-color: #4ea2d6;
+  border: 6px solid white;
+  border-radius: 19px;
+  height: 24px;
+  margin: -10px 0 0 -20px;
+  padding-top: 3px;
+  text-align: center;
+  width: 28px;
+  font-size: 17px;
+}
+
+.instructions {
+  color: #0a5e78;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: bold;
+  font-size: 1.08em;
+  margin: 0 0 -20px 40px;
+  letter-spacing: .1px;
+}
+
+/*----- form inputs -----*/
+label {
+  color: #888888;
+  font-family: "Open Sans";
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+input {
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 1px 0 #BBBBBB;
+  display: block;
+  font-size: 14px;
+  height: 33px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 0 0 0 10px;
+  width: 429px;
+  border: 0px inset;
+}
+
+input#portfolionameinput {
+  margin-bottom: -6px;
+}
+
+input#usernameinput {
+  margin-bottom: 16px;
+}
+
+/*----- form input group 1 -----*/
+#portfolionameinput {
+}
+
+#portfolioaddressinput {
+  width: 279px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#addressplaceholder {
+  background-color: #fafafa;
+  border-left: 1px solid #ebebeb;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 15px;
+  height: 27px;
+  padding: 6px 0px 0px 22px;
+  box-shadow: inset 0px 1px 1px 0 #BBBBBB;
+  position: absolute;
+  top: 129px;
+  right: 43px;
+  width: 127px;
+}
+
+/*----- form INPUT group 2 -----*/
+
+#emailinputnote {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+}
+
+/*----- form input group 3 -----*/
+#cardnumber {
+  width: 209px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+#securitycode {
+  width: 69px;
+  margin-bottom: 20px;
+}
+
+label[for=expirationmonth], label[for=expirationday] {
+  position: absolute;
+  text-indent:-999px;
+}
+
+/*----- group 3 : credit card selector -----*/
+
+/* hide default radio buttons by moving it off-screen so that it remains accessible to screen readers*/
+input[type=radio] {
+    position: absolute;
+    margin-left:-999px;
+}
+
+input[type=radio] + label{
+  background-color: #e7e7e7;
+  border-color: #ddd;
+  cursor:default;
+  float: right;
+  height: 30px;
+  margin-bottom: -8px;
+  padding: 0px;
+  width: 44px;
+  position: relative;
+  display: inline-block;
+}
+
+/*----- amex -----*/
+
+#creditcardradio {
+  position: absolute;
+  top: 55px;
+  right: 75px;
+}
+
+input[type=radio] + label[for="amex"] {
+  background: url('../images/sprite.png') no-repeat -1px -40px;
+}
+
+input[type=radio]:checked + label[for="amex"]{
+  background: url('../images/sprite.png') no-repeat 0 0;
+  border-color: #6f9eff;
+  box-shadow: 0 0 10px #6f9eff;
+}
+
+/*----- visa -----*/
+
+input[type=radio] + label[for="visa"] {
+	background: url('../images/sprite.png') no-repeat -48px -40px;
+}
+
+input[type=radio]:checked + label[for="visa"]{
+  background: url('../images/sprite.png') no-repeat -48px 0;
+  border-color: #6f9eff;
+  box-shadow: 0 0 10px #6f9eff;
+}
+
+/*----- discover -----*/
+
+input[type=radio] + label[for="discover"] {
+  background: url('../images/sprite.png') no-repeat -96px -40px;
+}
+
+input[type=radio]:checked + label[for="discover"] {
+  background: url('../images/sprite.png') no-repeat -96px 0;
+  border-color: #6f9eff;
+  box-shadow: 0 0 10px #6f9eff;
+}
+
+/*----- mastercard -----*/
+
+input[type=radio] + label[for="mastercard"] {
+  background: url('../images/sprite.png') no-repeat -144px -40px;
+}
+
+input[type=radio]:checked + label[for="mastercard"] {
+  background: url('../images/sprite.png')  no-repeat -144px 0;
+  border-color: #6f9eff;
+  box-shadow: 0 0 10px #6f9eff;
+}
+
+/*----- security code -----*/
+
+#securitycodesprite {
+  background-image: url('../images/sprite.png');
+  background-position: 0 -124px;
+  position: absolute;
+  top: 130px;
+  left: 130px;
+  width: 70px;
+  height: 33px;
+}
+
+/*----- select expiration date -----*/
+
+select {
+margin-top: 4px;
+}
+
+/*----- submit div + button! -----*/
+#submit {
+  margin-top: -17px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 218px;
+}
+
+#submitbutton {
+  color: white;
+  background: none;
+  background-image: linear-gradient(#90a933, #7b992b);
+  box-shadow: inset 0 1px 0px 0 #AABD5F;
+  border-radius: 6px;
+  border-top: 1px solid #90a933;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  height: 37px;
+  width: 218px;
+  padding: 0;
+  margin-left: 0 auto;
+}
+
+
+/*----- form valid & invalid -----*/
+input:required:invalid {
+  background: none;
+  background-color: white;
+}
+
+input:required:valid {
+  background: none;
+  background-color: white;
+}
+
+/* form valid & invalid : FOCUS */
+input:focus:required:invalid {
+	background: url('../images/sprite.png') no-repeat right -160px;;
+  background-color: white;
+}
+
+input:focus:required:valid {
+	background: url('../images/sprite.png') no-repeat right -187px;
+  background-color: white;
+}
+
+/* form valid & invalid : FOCUS #ortfolioaddressinput*/
+input:focus:required:invalid {
+	background: url('../images/sprite.png') no-repeat right -160px;;
+  background-color: white;
+}
+
+input:focus:required:valid {
+	background: url('../images/sprite.png') no-repeat right -187px;
+  background-color: white;
+}
+
+/*----- parsley form validator -----*/
+ul.parsley-errors-list {
+  display:none;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error,
+input:required:invalid.parsley-error {
+  background-color: #F2DEDE;
+}
+
+.parsley-errors-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0em;
+  line-height: 0em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
