@@ -303,12 +303,10 @@ native browser validation
 *****************************/
 input:required:invalid {
   background-color: white;
-  background: none;
 }
 
 input:required:valid {
   background-color: white;
-  background: none;
 }
 
 /* form valid & invalid : FOCUS */
