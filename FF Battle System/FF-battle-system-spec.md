@@ -45,6 +45,15 @@ if (status === false) {
          	} else {
          		if ( primary hand equipped with something ) {
             		Base Attack Power = Weapon's Attack Power + Str/4 + Level/4 ;
+                    
+                    //critical hit modifier
+                    var critical = Math.random() ;
+						if (critical < 0.03) {
+                       		Attack Power = Attack Power + (Weapon's Attack Power/2) ;
+                        } else {
+                        	// figure out : hit rate + enemy defense 
+                        }
+                    
            		} else ( primary hand is empty aka fists ) {
 					Base Attack Power = Str/4 + Level/4 ;
             	}
