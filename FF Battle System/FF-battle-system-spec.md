@@ -3,21 +3,23 @@
 //determine ailments
 if (status === false) {
 	if (physical attack) {
-    	left hand equipped === false
-        if ( left hand equipped === bow || arrow ) {
-        	if ( right hand equipped === bow || arrow ) {
-        		Base Attack Power = Bow's Attack Power/2 + Arrow's Attack Power + Str/4
+        if ( primary or non-primary hand equipped === bow || arrow ) {
+        	if ( primary hand equipped === bow && other hand equipped === arrows ) {
+            	Base Attack Power = Base Attack Power (Bow and Arrow) * 4/5
+            } else if ( non-primary hand equipped === bow && other hand equipped === arrows  ) {
+				Base Attack Power = Bow's Attack Power/2 + Arrow's Attack Power + Str/4
        		}
         	else {
-        		Base Attack Power = Base Attack Power (Fists) + 1	
+                Base Attack Power = Base Attack Power (Fists) + 1
             }
-         }   
-   		if (ailment === toad || mini) {
-    		critial attack = false;
-        }
-    }
-    }
-    if (magic attack) {
+         } else {
+         	if ( primary hand equipped with something ) {
+            	Base Attack Power = Weapon's Attack Power + Str/4 + Level/4
+            } else ( primary hand is empty aka fists ) {
+				Base Attack Power = Str/4 + Level/4            	
+            }
+         }
+    } else if (magic attack) {
     
     }
     
