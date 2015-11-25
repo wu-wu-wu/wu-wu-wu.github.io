@@ -2,7 +2,6 @@
 Completely based off of [Deadlike2's FF4 Algorithms FAQ](http://www.gamefaqs.com/snes/588330-final-fantasy-iv/faqs/54945)
 
 ## Step 1: Compute the Attacker's Base Attack Power + Critical Dmg
------------------
 ```
 if (status === false) {
 
