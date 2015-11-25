@@ -50,45 +50,50 @@ if (status === false) {
                     
                     //critical hit modifier
                     var critical = Math.random() ;
-						if (critical < 0.03) {
+		if (critical < 0.03) {
                        		Attack Power = Attack Power + (Weapon's Attack Power/2) ;
                         } else {
                         	// figure out : hit rate + enemy defense 
                         }
                     
            		} else ( primary hand is empty aka fists ) {
-					Base Attack Power = Str/4 + Level/4 ;
+				Base Attack Power = Str/4 + Level/4 ;
             	}
          	}
         } 
-        
-        figure out possible critical hit attack modification : 1/32 probability
-        excluding: character with Mini/Toad status; Jump and Kick abilities; all monsters
-        special : elemental attack power modifiers 
-         
     } else if (magic attack) {
-    
+    	// magic attack algorithms
     }
     
 } else {
-	//determine status 
-    if ( status === mini || toad ){
-    	attack = 1 ;
-        no critical ;
-		set status duration timer to 1; 
-    } else if ( status === curse ) {
-    	Attack Power = Attack Power * 1/2 ;
-    } else if ( status === berserk ) {
-    	Attack Power = Attack Power * 3/2 ;
-   	}	
-	Kick special modifier : Attack Power = Attack Power * 1/2
-    Jump special modifier : Attack Power = Attack Power * 2 
-    Power special modifier : Attack Power = Attack Power * 2
-    Deadly special modifier : Attack Power = Attack Power * 3
+	//determine status, command and elemental modifiers
 }
 
+```
+## Step 2: Modify the Base Attack Power
+```
+//critical hit ~ 1/32 chance; included in step 1
+
+if ( status === mini || toad ){
+	attack = 1 ;
+	no critical ;
+	set status duration timer to 1; 
+} else if ( status === curse ) {
+    Attack Power = Attack Power * 1/2 ;
+} else if ( status === berserk ) {
+    Attack Power = Attack Power * 3/2 ;
+   }	
+Kick special modifier : Attack Power = Attack Power * 1/2
+Jump special modifier : Attack Power = Attack Power * 2 
+Power special modifier : Attack Power = Attack Power * 2
+Deadly special modifier : Attack Power = Attack Power * 3
+```
+## Step 3: Compute the Attacker's Hit Rate 
 
 ```
+
+```
+
 ## In-progress aka shit to figure out:
 
 ### 1) Physical Damage Algorithm  
