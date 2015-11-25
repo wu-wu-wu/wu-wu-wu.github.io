@@ -2,6 +2,16 @@
 Completely based off of [Deadlike2's FF4 Algorithms FAQ](http://www.gamefaqs.com/snes/588330-final-fantasy-iv/faqs/54945)
 
 ## Step 1: Compute the Attacker's Base Attack Power + Critical Dmg
+- no weapons
+- Bow && Arrow
+	- primary v non-primary
+- Bow || Arrow
+	- Bow in primary v non-primary
+- non-bow & arrow weapons
+- Yang
+- Edge
+- monsters
+
 ```
 if (status === false) {
 
@@ -26,7 +36,8 @@ if (status === false) {
 						if (critical < 0.03) {
                        		Attack Power = Attack Power + Bow's Attack Power * 4/5 ;
                         } else {
-                        	// figure out : hit rate + enemy defense 
+                        	Attack Power stays the same
+
                         }
                         
             	} else if ( non-primary hand equipped === bow && other hand equipped === arrows  ) {
@@ -37,9 +48,8 @@ if (status === false) {
 						if (critical < 0.03) {
                        		Attack Power = Attack Power + Bow's Attack Power ;
                         } else {
-                        	// figure out : hit rate + enemy defense 
+                            Attack Power stays the same
                         }
-                        
        			} else {
                 	Base Attack Power = Base Attack Power (Fists) + 1 ;
             	}
@@ -50,13 +60,13 @@ if (status === false) {
                     
                     //critical hit modifier
                     var critical = Math.random() ;
-		if (critical < 0.03) {
-                       		Attack Power = Attack Power + (Weapon's Attack Power/2) ;
-                        } else {
-                        	// figure out : hit rate + enemy defense 
-                        }
-                    
-           		} else ( primary hand is empty aka fists ) {
+					if (critical < 0.03) {
+                    	Attack Power = Attack Power + (Weapon's Attack Power/2) ;
+                    } else {
+                    	Attack Power stays the same 
+                    }
+                   
+           		} else ( primary hand === empty aka fists ) {
 				Base Attack Power = Str/4 + Level/4 ;
             	}
          	}
@@ -71,9 +81,13 @@ if (status === false) {
 
 ```
 ## Step 2: Modify the Base Attack Power
-```
-//critical hit ~ 1/32 chance; included in step 1
 
+* critical hit ~ 1/32 chance; included in step 1
+* status modifier
+* command modifier 
+* elemental modifier
+
+```
 if ( status === mini || toad ){
 	attack = 1 ;
 	no critical ;
@@ -89,8 +103,18 @@ Power special modifier : Attack Power = Attack Power * 2
 Deadly special modifier : Attack Power = Attack Power * 3
 ```
 ## Step 3: Compute the Attacker's Hit Rate 
+- no weapons
+- Bow && Arrow
+	- primary v non-primary
+- Bow || Arrow
+	- Bow in primary v non-primary
+- non-bow & arrow weapons
+- monsters
 
 ```
+if hand === empty aka fists then Base Hit Rate = 50 + Level/4;
+else if hands === non-bow and arrow weapon then 
+else if both hands === bow and arrow then Base Hit Rate = Bow's Hit Rate + Level/4;
 
 ```
 
@@ -145,6 +169,4 @@ Damage Based On The Caster's Current HP
 Heal outside of battle   
 Formation  
 Casting "weapon-item" magic  
-Slow  
-
-
+Slow
