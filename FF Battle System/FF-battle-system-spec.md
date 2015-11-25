@@ -1,6 +1,5 @@
 
 ```
-//determine ailments
 if (status === false) {
 
 	if (physical attack) {
@@ -59,6 +58,7 @@ if (status === false) {
             	}
          	}
         } 
+        
          // figure out possible critical hit attack modification : 1/32 probability
          // excluding: character with Mini/Toad status; Jump and Kick abilities; all monsters
          // special : elemental attack power modifiers 
@@ -68,9 +68,24 @@ if (status === false) {
     }
     
 } else {
-	determine status 
-    if ( freeze status ){
+	//determine status 
+    if ( status === mini || toad ){
+    	attack = 1 ;
+        no critical ;
 		var i = 2 turns; take off 1 turn; wait
-    }
+    } else if ( status === curse ) {
+    	Attack Power = Attack Power * 1/2 ;
+    } else if ( status === berserk ) {
+    	Attack Power = Attack Power * 3/2 ;
+   	}
+
+	//Kick special modifier : Attack Power = Attack Power * 1/2;
+    //Jump special modifier : Attack Power = Attack Power * 2 ;
+    //Power special modifier : Attack Power = Attack Power * 2
+    //Deadly special modifier : Attack Power = Attack Power * 3
+
+
+}
+    
 }
 ```
