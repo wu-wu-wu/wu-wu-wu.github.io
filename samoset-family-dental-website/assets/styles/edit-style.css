@@ -106,7 +106,6 @@ p {
 
 .meta-p {
   color: #555;
-
 }
 
 /* text edits bold -----------------------*/
@@ -188,8 +187,27 @@ li {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 20px;
   box-sizing: border-box;
+}
+
+@media (min-width: 400px){
+  .container-nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1180px){
+  .container-nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
 }
 
 /* navigation ----------------------------*/
@@ -201,7 +219,9 @@ nav.primary ul {
   display: none;
 }
 
-@media (min-width: 450px) {
+/* nav on smaller browser tablets ---------------*/
+@media (min-width: 600px) {
+
   nav.primary ul,
   nav.primary ul li {
     margin: 0px;
@@ -221,18 +241,6 @@ nav.primary ul {
     position: relative;
   }
 
-  nav.primary ul li a {
-    display: inline-block;
-    /* line-height: 32px; */
-    padding: 12px 24px 16px 24px;
-    text-decoration: none;
-    border-left: 1px solid #999;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-
   .menu {
     margin-top: 12px;
   }
@@ -240,6 +248,36 @@ nav.primary ul {
   nav.primary ul li a:hover {
     background-color: #07C6EB;
     cursor: pointer;
+  }
+
+  nav.primary ul li a {
+    display: inline-block;
+    color: #07C6EB;
+    padding: 8px 20px 8px 20px;
+    /* font-size: 18px; */
+    text-decoration: none;
+    /* border: 1px solid #999; */
+    /* border-left: 1px solid #999; */
+    /* border-top: 1px solid #999; */
+    border-right: 1px solid #999;
+    /* border-top-left-radius: 8px; */
+    /* border-top-right-radius: 8px; */
+    /* border-radius: 8px; */
+  }
+}
+
+/* nav on regular laptop/desktops ---------------*/
+@media (min-width: 1245px) {
+  nav.primary ul li a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 24px 16px 24px;
+    text-decoration: none;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
 }
 
@@ -267,10 +305,10 @@ li {
   }
 
 
-
-@media (min-width: 450px) {
+@media (min-width: 600px) {
   .anchor-link { display: none; }
 }
+
 /* if not on mobile ----------------------*/
 @media all and (min-width:48em){
 
@@ -333,26 +371,70 @@ box-sizing: border-box; */}
 }
 
 /* column changes -----------------------------*/
-  .one.column.anchor-link{
-    width: auto;
-  }
+.one.column.anchor-link{
+  width: auto;
+}
 
-  div.three.columns.logo{
-    width: 60.0%;
-    box-sizing: border-box;
-  }
+/* navigation columns -------------------------------*/
+/* this class will break down into halves ; 
+use for logo or multiple images on one line mobile*/
+.flex-2.columns {
+    width: 56%;
+}
 
-@media (min-width: 450px) {
-  div.three.columns.logo{
-    width: 40%; ;
+@media (min-width: 400px){
+  .flex-2.columns {
+    width: 44%;
   }
 }
 
-@media (min-width: 900px) {
-  div.three.columns.logo{
-    width: 22%; ;
+@media (min-width: 600px){
+  .flex-2.columns {
+    width: 32%;
   }
 }
+
+@media (min-width: 700px){
+  .flex-2.columns {
+    width: 20%;
+  }
+}
+
+  @media (min-width: 1000px){
+  .flex-2.columns {
+    width: 18%;
+  }
+}
+
+/* use for flexible primary navigation */
+.flex-nav.columns {
+  width: 100%;
+}
+
+@media (min-width: 400px){
+  .flex-nav.columns {
+    width: 66%;
+  }
+}
+
+@media (min-width: 600px){
+  .flex-nav.columns {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px){
+  .flex-nav.columns {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px){
+.flex-nav.columns {
+  width: 70%;
+  }
+}
+
 /* full width style --------------------------*/
 .full-width {
   clear:both;
