@@ -1,8 +1,8 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Typography
 - Grid
 - Base Styles
-- Typography
 - Links
 - Buttons
 - Forms
@@ -25,45 +25,66 @@ html {
   height: 900px;
 }
 
+
+/* typography -------------------*/
 body {
   font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
-h1, h2, h4, h5, h6, nav {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Volkhov', 'Book Antiqua', 'Palatino', sans-serif;
 }
 
 h1 {
   color: #666666;
-  font-size: 28px;
+  font-size: 2.827em;
   font-weight: 400;
+  letter-spacing: -.4px;
 }
 
 @media (min-width: 450px) {
   h1 {
     color: #666666;
-    font-size: 40px;
+    font-size: 3.998em;
     font-weight: 400;
   }
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 0;
+}
+
+@media (min-width: 450px) {
+  h2 {
+  font-size: 2.827em;
+  letter-spacing: 0;
+  }
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 22px;
   letter-spacing: 0;
+  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+}
+
+@media (min-width: 450px) {
+  h3 {
+  font-size: 1.999em;
+  letter-spacing: 0;
+  }
 }
 
 h4 {
-  font-size: 24px;
+  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+  font-size: 22px;
+  font-weight: 500;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-weight: 300;
 }
 
 p {
@@ -71,11 +92,6 @@ p {
   font-weight: 300;
   letter-spacing: 0;
 }
-
-/*p::first-letter {
-  font-weight: 500;
-  font-size: 32px;
-}*/
 
 @media (min-width: 300px) {
   p {
@@ -106,16 +122,30 @@ p {
 
 .meta-p {
   color: #555;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-/* text edits bold -----------------------*/
-.font-weight-500 {
+/*p::first-letter {
   font-weight: 500;
+  font-size: 32px;
+}*/
+
+
+/* typography - font weight classes --------*/
+.regular {
+  font-weight: 400;
 }
 
-.font-weight-600 {
-  font-weight: 600;
+.semi-bold {
+  font-weight: 700;
 }
+
+.bold {
+  font-weight: 900;
+}
+
 
 /* center -------------------------*/
 .center {
@@ -123,13 +153,13 @@ p {
   margin: auto;
 }
 
-.background h1 {
+.background h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
 }
-.background h1:before, .background h1:after {
+.background h2:before, .background h2:after {
   background-color: #ddd;
   content: '\a0';
   flex-grow: 1;
@@ -137,10 +167,10 @@ p {
   position: relative;
   top: 0.5em;
 }
-.background h1:before {
+.background h2:before {
   margin-right:10px;
 }
-.background h1:after {
+.background h2:after {
   margin-left:10px;
 }
 
@@ -284,8 +314,9 @@ nav.primary ul {
 /* mobile navigation -------------------*/
 #mobile-nav ul li a {
     display: block;
-    padding: 16px 10px;
+    padding: 12px 8px;
     border-bottom: 1px solid #ccc;
+  font-size: 20px;
     text-decoration: none;
     text-align: center;
     margin: 0;
@@ -293,6 +324,8 @@ nav.primary ul {
 
 li {
   margin: 0;
+      list-style: none;
+
 }
 .anchor-link {
     text-align: center;
