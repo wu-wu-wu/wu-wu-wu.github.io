@@ -146,6 +146,10 @@ p {
   font-weight: 900;
 }
 
+/* typography - font size classes ----------*/
+.h1-size-down {
+  font-size: 2.827em;
+}
 
 /* centering  -----------------------*/
 .center {
@@ -779,7 +783,7 @@ footer div .columns.no-border {
 
 
 /* buttons ---------------------*/
-.button {
+.button a p {
   font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   display: inline-block;
   padding: 0 32px;
@@ -810,6 +814,8 @@ footer div .columns.no-border {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  display:block;
+  text-decoration: none;
 }
 
 .button-blue {
@@ -846,7 +852,7 @@ footer div .columns.no-border {
 }
 
 /* center button -----------------------*/
-a.button.center {
+p.button.center {
   /* margin: 0 auto; */
   display: block;
   /* margin-left: auto; */
