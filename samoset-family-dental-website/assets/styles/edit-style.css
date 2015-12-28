@@ -147,7 +147,7 @@ p {
 }
 
 
-/* center -------------------------*/
+/* centering  -----------------------*/
 .center {
   text-align: center;
   margin: auto;
@@ -482,7 +482,7 @@ use for logo or multiple images on one line mobile*/
 }
 
 /* home banner -----------------------*/
-h1.opening-text {
+.opening-text {
   text-align: center;
   font-weight: 400;
   font-size: 22px;
@@ -492,7 +492,7 @@ h1.opening-text {
 }
 
 @media (min-width: 450px) {
-  h1.opening-text {
+  .opening-text {
     text-align: center;
     font-weight: 400;
     font-size: 32px;
