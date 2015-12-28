@@ -83,7 +83,7 @@
     <p>Fill out this form below to make an appointment with us:</p>
     <form id="form-make-appointment" method="post" data-parsley-validate>
       <fieldset>
-        <legend class="instructions"><h3>Name, Date and Reason for Visit</h3></legend>
+        <legend class="instructions">Name, Date and Reason for Visit</legend>
 
         <section>
           <!-- Patient Name -->
@@ -101,10 +101,13 @@
           <!-- Patient's Contact -->
           <label for="patientcontactinput">What's the best way to reach you?</label>
           <input type="text" id="patientcontactinput" name="patientcontact" data-validate="notBlank signUpName" title="please enter your preferred contact information" aria-required="true" required >
-        </section>
+          </section>
+        
+          <!-- submit button -->
           <div id="form-submit">
             <input type="submit" name="submit" id="submitbutton" value="Submit Your Request" />
           </div>
+        
         </fieldset>
       </form>
     </section>
