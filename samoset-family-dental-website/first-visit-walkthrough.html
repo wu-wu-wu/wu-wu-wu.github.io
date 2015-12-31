@@ -16,14 +16,14 @@
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <[endif]-->
+  <![endif]-->
 </head>
 
 <body>
   <!--navigation-->
   <header>
-    <div class="container-nav">
-      <nav class="row primary">
+    <div class="nav-container">
+      <nav class="row nav-primary">
         <!-- logo -->
         <div class="flex-2 columns">
           <a href="index.html"><img class="u-max-full-width" src="assets/images/logo-with-text.png" alt="Samoset Family Dental Home"/></a>
@@ -32,8 +32,8 @@
           </a-->
         </div>
         <!-- navigation -->
-        <div class="one column anchor-link">
-          <a class="anchor-link" href="#mobile-nav">Menu</a>
+        <div class="one column nav-mobile--anchor-link">
+          <a class="nav-mobile--anchor-link" href="#nav-mobile">Menu</a>
         </div>
         <div class="flex-nav columns">
           <ul>
@@ -100,7 +100,7 @@
   </main>
 
   <!-- mobile navigation -->
-  <nav id ="mobile-nav">
+  <nav id ="nav-mobile">
     <div class ="full-width">
       <ul>
         <li class="selected"><a href="index.html">Home</a></li>
@@ -115,19 +115,20 @@
     <!--secondary navigation -->
     <div class="container secondary value-props-40">
       <nav class="row">
-        <h1>Patient Resources</h1>
+        <h2>Patient Resources</h2>
       </nav>
       <div>
         <ul>
-            <a href="patient-resources.html"><li class="bottom-nav">Patient Resources Home</li></a>
-            <a href="first-visit-walkthrough.html"><li class="bottom-nav">First Visit Walkthrough</li></a>
-            <a href="financial-and-insurances.html"><li class="bottom-nav selected">Financial & Insurances</li></a>
+            <a href="patient-resources.html"><li class="nav-bottom">Patient Resources Home</li></a>
+            <a href="first-visit-walkthrough.html"><li class="nav-bottom">First Visit Walkthrough</li></a>
+            <a href="financial-and-insurances.html"><li class="nav-bottom selected">Financial & Insurances</li></a>
         </ul>
       </div>
-      <div class="center">
-        <a class="button" href="#">Go Back to Top</a>
-      </div>
+      
+    <div class="center value-props-32-top">
+      <a class="button" href="#">Go Back to Top</a>
     </div>
+  </div>
 
   <!-- footer -->
   <footer class="full-width bg-color">
