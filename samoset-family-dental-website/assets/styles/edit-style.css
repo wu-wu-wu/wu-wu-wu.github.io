@@ -24,6 +24,19 @@ main {
   width: auto;
 }
 
+.container {
+  position: relative;
+  width: 88%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
 /* navigation columns -------------------------------*/
 /* this class will break down into halves ; 
 use for logo or multiple images on one line mobile*/
@@ -90,6 +103,26 @@ use for logo or multiple images on one line mobile*/
   }
 }
 
+.flex-sm-img {
+  width: 25%;
+}
+
+@media (min-width: 550px){
+  .flex-sm-img {
+    width: 55%;
+  }
+}
+
+.padding-mobile{
+  padding: 0 32px 0 32px;
+}
+
+@media (min-width: 550px){
+  .padding-mobile {
+    padding: 0px;
+  }
+}
+
 /* Base Styles
 --------------------------------------------------*/
 /* div centering */
@@ -114,6 +147,15 @@ use for logo or multiple images on one line mobile*/
 }
   
 /* spacing */
+
+.value-props-16-bottom{
+  padding-bottom: 16px;
+}
+
+.value-props-24-bottom{
+  padding-bottom: 24px;
+}
+
 .value-props-32{
   padding-top: 32px;
   padding-bottom: 32px;
@@ -121,6 +163,10 @@ use for logo or multiple images on one line mobile*/
 
 .value-props-32-top {
   padding-top: 32px;
+}
+
+.value-props-32-right {
+  padding-right: 32px;
 }
 
 .value-props-32-bottom{
@@ -141,8 +187,26 @@ use for logo or multiple images on one line mobile*/
   padding-top: 48px;
 }
 
+.value-props-48-right {
+  padding-right: 48px;
+}
+
+.value-props-48-lf-rt{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 .value-props-48-bottom{
   padding-bottom: 48px;
+}
+
+.value-props-80-right{
+  padding-right: 80px;
+}
+
+.value-props-80-lf-rt{
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /* typography 
@@ -828,7 +892,7 @@ footer div .columns.no-border {
   max-height: 100%;
   box-sizing: border-box; }
 
-
+ 
 /* Clearing 
 ----------------------------------------*/
 /* mobile hidden / display none */
@@ -836,7 +900,7 @@ footer div .columns.no-border {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 550px) {
   .mobile-hidden {
     display: inherit;
   }
@@ -846,7 +910,7 @@ footer div .columns.no-border {
   display: inherit;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 550px) {
   .mobile-show {
     display: none;
   }
