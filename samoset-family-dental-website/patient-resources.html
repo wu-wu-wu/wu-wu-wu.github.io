@@ -3,7 +3,7 @@
 <head>
   <script src="assets/scripts/modernizr.min.js" type="text/javascript"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Samoset Family Dental, PC</title>
+  <title>Patient Resources | Samoset Family Dental, PC | General, Cosmetic &amp; Implant Dentistry</title>
   <meta name="author" content="Samoset Family Dental">
   <!-- mobile meta -->
   <meta name="HandheldFriendly" content="true">
@@ -28,7 +28,7 @@
       <nav class="row nav-primary">
         <!-- logo -->
         <div class="flex-2 columns">
-          <a href="index.html"><img class="u-max-full-width" src="assets/images/logo-with-text.png" alt="Samoset Family Dental Home"/></a>
+          <a href="index.html"><img class="logo u-max-full-width" src="assets/images/logo-with-text.png" alt="Samoset Family Dental Home"/></a>
           <!--a href="index.html" class="svg">
             <object data="assets/images/logo-with-text.svg" type="image/svg+xml" class="u-max-full-width"/></object>
           </a-->
@@ -44,6 +44,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="patient-resources.html">Patient Resources</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
+            <li class="nav-primary-special"><a href="first-visit-walkthrough.html">New Patient?</a></li>
           </ul>
         </div>
       </nav>
@@ -53,107 +54,114 @@
   <main class="full-width bg-color">
     <section class="container value-props-48">
       <div class="offset-by-two eight columns">
-      <h1>Patient Resources</h1>
-      <nav class="value-props-32-bottom">
-        <ul>
+        <h1>Patient Resources</h1>
+        <nav class="value-props-32-bottom">
+          <ul>
             <li class="nav-bottom"><a href="first-visit-walkthrough.html">First Visit Walkthrough</a></li>
             <li class="nav-bottom"><a href="financial-and-insurances.html">Financial &amp; Insurances</a></li>
-        </ul>
-      </nav>
-      <div class="row value-props-32-bottom">
-        <img class="u-max-full-width" src="assets/images/patient-resources.jpg" alt="a patient leisurely waiting in our office"/>
-      </div>
+          </ul>
+        </nav>
+        
+        <div class="row value-props-32-bottom">
+          <img class="u-max-full-width" src="assets/images/patient-resources.jpg" alt="a patient leisurely waiting in our office"/>
+        </div>
 
-      <p>We've created a walkthrough of what your first visit with us will feel like here:</p>
-      <ul class="offset-by-three column">
-        <li class="button"><a href="first-visit-walkthrough.html">First Visit Walkthrough</a></li>
-        <li class="button"><a href="first-visit-walkthrough.html">Financial & Insurances</a></li>
-      </ul>
-      <p>Read about your financial options and insurance information at our office <a href="financial-and-insurance.html">here</a>.</p>
-      <p>We are in the process of making something wonderful for the kids. Stay tuned!</p>
-      <h2>Patient Forms</h2>
-      <p>First-time patients need to fill out the HIPPA and Medical History Form prior to their exam. To make the process easier, you can now download and print the forms below in PDF, and fill them out before you come in.</p>
-      <ul class="offset-by-one column">
-        <li class="button"><a href="assets/hipaa_form.pdf">Download - HIPAA Consent Form</a></li>
-        <li class="button"><a href="assets/medical-history-form.pdf">Download - Medical History Form</a></li>
-      </ul>
-    </div>
+        <p>We've created a walkthrough of what your first visit with us will feel like here:</p>
+        
+        <ul class="value-props-32-bottom">
+          <li class="button"><a href="first-visit-walkthrough.html">First Visit Walkthrough</a></li>
+          <li class="button"><a href="first-visit-walkthrough.html">Financial &amp; Insurances</a></li>
+        </ul>
+        
+        <p>Read about your financial options and insurance information at our office <a href="financial-and-insurance.html">here</a>.</p>
+        <p>We are in the process of making something wonderful for the kids. Stay tuned!</p>
+
+        <h2>Patient Forms</h2>
+        <p>First-time patients need to fill out the HIPPA and Medical History Form prior to their exam. To make the process easier, you can now download and print the forms below in PDF, and fill them out before you come in.</p>
+        
+        <ul>
+          <li class="button"><a href="assets/hipaa_form.pdf">Download - HIPAA Consent Form</a></li>
+          <li class="button"><a href="assets/medical-history-form.pdf">Download - Medical History Form</a></li>
+        </ul>
+        
+      </div>
     </section>
 
     <section class="container">
-      <h2>Make an Appointment:</h2>
-      <p>Fill out this form below to make an appointment with us:</p>
-    
-      <form id="form-make-appointment" method="post" data-parsley-validate>
-        
-        
-      <!-- Form Section 1-->
-      <fieldset>
-        <legend class="instructions">Contact Info</legend>
+        <div class="offset-by-two eight columns">
+        <h2>Make an Appointment:</h2>
+        <p>Fill out this form below to make an appointment with us:</p>
 
-        <section>
-          <!-- Patient Name -->
-          <label for="patientnameinput">Name</label>
-          <input type="text" id="patientnameinput" name="patientname" data-validate="notBlank signUpName" title="please enter your name" aria-required="true" required><br>
-          
-          <!-- Patient Phone Number -->
-          <label for="patientnumberinput">Phone Number</label>
-          <input type="tel" id="patientnumberinput" name="patientnumber" data-validate="notBlank" title="please enter the best number for us to reach you" aria-required="true" required>
-          
-          <!-- Patient Email -->
-          <label for="patientemailinput">Email</label>
-          <input type="email" id="patientemailinput" name="patientemail">
-          <label for="emailinput" id="emailinputnote">NOTE: We'll never share your email, promise.</label>
+        <form id="form-make-appointment" method="post" data-parsley-validate>
 
-        </section>
-      </fieldset>  
-        
-        
-      <!-- Form Section 2-->
-      <fieldset>
-        <legend class="instructions">Reason for Visit</legend>
 
-        <section>
-          <!-- Patient's Reason for Visit -->
-          <label for="reasonforvisitinput">What's your concern this visit?</label>
-          <select name="reasonforinputinput" id="reasonforvisit" title="select the reason for your visit" aria-required="true" required >
-            <option value="00" selected disabled>Reason</option>
-            <option value="01">Regular Checkup and Cleaning</option>
-            <option value="02">Whitening</option>          
-            <option value="02">A toothache!</option>
-            <option value="03">Other</option>
-          </select>
-        </section>
-      </fieldset>
-        
-        
-      <fieldset>
-        <legend class="instructions">What are your preferred date and time slots?</legend>
-        
-        <section>
-          <!-- Patient's Preferred Date-->
-          <label for="apptdateinput">Date</label>
-          <input type="date" id="apptdateinput" name="apptdate" data-validate="notBlank signUpName" title="please select a date" aria-required="true" required>
+        <!-- Form Section 1-->
+        <fieldset>
+          <legend class="instructions">Contact Info</legend>
 
-          <!-- Patient's Preferred Time Slots-->
-          <label for="apptdateinput">Time Slot</label>
-          <select name="reasonforinputinput" id="reasonforvisit" title="select the reason for your visit" aria-required="true" required>
-            <option value="00" selected disabled>Time Slot</option>
-            <option value="01">Morning</option>
-            <option value="02">Afternoon</option>          
-            <option value="02">Evening</option>
-          </select>
-        </section>
-      </fieldset>
-        
-        
-        <!-- submit button -->
-        <div id="form-submit">
-          <input type="submit" name="submit" id="submitbutton" value="Submit" />
-        </div>
+          <section>
+            <!-- Patient Name -->
+            <label for="patientnameinput">Name</label>
+            <input type="text" id="patientnameinput" name="patientname" placeholder="First and Last Name" data-validate="notBlank signUpName" title="please enter your name" aria-required="true" required><br>
+
+            <!-- Patient Phone Number -->
+            <label for="patientnumberinput">Phone Number</label>
+            <input type="tel" id="patientnumberinput" name="patientnumber" placeholder="555 555 5555" data-validate="notBlank" title="please enter the best number for us to reach you" aria-required="true" required>
+
+            <!-- Patient Email -->
+            <label for="patientemailinput">Email</label>
+            <input type="email" id="patientemailinput" name="patientemail" placeholder="myemail@example.com">
+            <label for="emailinput" id="emailinputnote" class="note">NOTE: We'll never share your email, promise.</label>
+          </section>
+        </fieldset>  
+
+
+        <!-- Form Section 2-->
+        <fieldset>
+          <legend class="instructions">Reason for Visit</legend>
+
+          <section>
+            <!-- Patient's Reason for Visit -->
+            <label for="reasonforvisitinput">What's your concern this visit?</label>
+            <select name="reasonforinputinput" id="reasonforvisit" title="select the reason for your visit" aria-required="true" required >
+              <option value="00" selected disabled>Reason</option>
+              <option value="01">Regular Checkup and Cleaning</option>
+              <option value="02">Whitening</option>          
+              <option value="02">A toothache!</option>
+              <option value="03">Other</option>
+            </select>
+          </section>
+        </fieldset>
+
+
+        <fieldset>
+          <legend class="instructions">What are your preferred date and time slots?</legend>
+
+          <section>
+            <!-- Patient's Preferred Date-->
+            <label for="apptdateinput">Date</label>
+            <input type="date" id="apptdateinput" name="apptdate" data-validate="notBlank signUpName" title="please select a date" aria-required="true" required>
+
+            <!-- Patient's Preferred Time Slots-->
+            <label for="apptdateinput">Time Slot</label>
+            <select name="reasonforinputinput" id="reasonforvisit" title="select the reason for your visit" aria-required="true" required>
+              <option value="00" selected disabled>Time Slot</option>
+              <option value="01">Morning</option>
+              <option value="02">Afternoon</option>          
+              <option value="02">Evening</option>
+            </select>
+          </section>
+        </fieldset>
+
+
+          <!-- submit button -->
+          <div id="form-submit">
+            <input type="submit" name="submit" id="submitbutton" value="Submit" />
+          </div>
 
         
-      </form>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -175,7 +183,7 @@
     <div class="container value-props-48">
       <div class="four columns">
         <h3><span class="white">Find Us</span></h3>
-        <img class="u-max-full-width" src="assets/images/logo-with-text.svg" alt="Samoset Family Dental logo"/>
+        <img class="u-max-full-width" src="assets/images/logo-with-text-dark-01.png" alt="Samoset Family Dental logo"/>
         <p class="blue">Jiangyun Sheng, DMD<br>
         <span class="white">Samoset Family Dental, PC<br>
         159 Samoset Street Suite 5,<br>

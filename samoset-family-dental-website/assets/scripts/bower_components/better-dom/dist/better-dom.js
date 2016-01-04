@@ -63,8 +63,8 @@
     var userAgent = WINDOW.navigator.userAgent;
     var jscriptVersion = WINDOW.ScriptEngineMajorVersion;
 
-    var JSCRIPT_VERSION = jscriptVersion && jscriptVersion();
-    var LEGACY_ANDROID = ~userAgent.indexOf("Android") && userAgent.indexOf("Chrome") < 0;
+    var JSCRIPT_VERSION = jscriptVersion &&amp; jscriptVersion();
+    var LEGACY_ANDROID = ~userAgent.indexOf("Android") &&amp; userAgent.indexOf("Chrome") < 0;
     var WEBKIT_PREFIX = WINDOW.WebKitAnimationEvent ? "-webkit-" : "";
 
     var DOM = new $Document(DOCUMENT);
@@ -88,7 +88,7 @@
     }
 
     function util$index$$injectElement(node) {
-        if (node && node.nodeType === 1) {
+        if (node &&amp; node.nodeType === 1) {
             return node.ownerDocument.getElementsByTagName("head")[0].appendChild(node);
         }
     }
@@ -155,7 +155,7 @@
         global$emmet$$tagCache = {"": ""},
         global$emmet$$normalizeAttrs = function(_, name, value, rawValue)  {
             // try to detemnie which kind of quotes to use
-            var quote = value && value.indexOf("\"") >= 0 ? "'" : "\"";
+            var quote = value &&amp; value.indexOf("\"") >= 0 ? "'" : "\"";
 
             if (typeof rawValue === "string") {
                 // grab unquoted value for smart quotes
@@ -217,12 +217,12 @@
                 if (str !== "(") {
                     // for ^ operator need to skip > str.length times
                     for (var i = 0, n = (op === "^" ? str.length : 1); i < n; ++i) {
-                        while (stack[0] !== op && global$emmet$$operators[stack[0]] >= priority) {
+                        while (stack[0] !== op &&amp; global$emmet$$operators[stack[0]] >= priority) {
                             var head = stack.shift();
 
                             output.push(head);
                             // for ^ operator stop shifting when the first > is found
-                            if (op === "^" && head === ">") break;
+                            if (op === "^" &&amp; head === ">") break;
                         }
                     }
                 }
@@ -326,14 +326,14 @@
 
         var nodes, el;
 
-        if (value && value in global$emmet$$default) {
+        if (value &&amp; value in global$emmet$$default) {
             nodes = doc.createElement(value);
 
             if (all) nodes = [ new $Element(nodes) ];
         } else {
             value = value.trim();
 
-            if (value[0] === "<" && value[value.length - 1] === ">") {
+            if (value[0] === "<" &&amp; value[value.length - 1] === ">") {
                 value = varMap ? DOM.format(value, varMap) : value;
             } else {
                 value = DOM.emmet(value, varMap);
@@ -364,7 +364,7 @@
     var util$selectormatcher$$rquickIs = /^(\w*)(?:#([\w\-]+))?(?:\[([\w\-\=]+)\])?(?:\.([\w\-]+))?$/,
         util$selectormatcher$$propName = VENDOR_PREFIXES.concat(null)
             .map(function(p)  {return (p ? p.toLowerCase() + "M" : "m") + "atchesSelector"})
-            .reduceRight(function(propName, p)  {return propName || p in HTML && p}, null);
+            .reduceRight(function(propName, p)  {return propName || p in HTML &&amp; p}, null);
 
     var util$selectormatcher$$default = function(selector, context) {
         if (typeof selector !== "string") return null;
@@ -382,11 +382,11 @@
 
         return function(node) {var $D$3;var $D$4;
             var result, found;
-            if (!quick && !util$selectormatcher$$propName) {
+            if (!quick &&amp; !util$selectormatcher$$propName) {
                 found = (context || node.ownerDocument).querySelectorAll(selector);
             }
 
-            for (; node && node.nodeType === 1; node = node.parentNode) {
+            for (; node &&amp; node.nodeType === 1; node = node.parentNode) {
                 if (quick) {
                     result = (
                         (!quick[1] || node.nodeName.toLowerCase() === quick[1]) &&
@@ -407,14 +407,14 @@
                 if (result || !context || node === context) break;
             }
 
-            return result && node;
+            return result &&amp; node;
         };
     };
 
     var util$extensionhandler$$rePrivateFunction = /^(?:on|do)[A-Z]/;
 
     var util$extensionhandler$$default = function(selector, condition, mixins, index)  {
-        var ctr = mixins.hasOwnProperty("constructor") && mixins.constructor,
+        var ctr = mixins.hasOwnProperty("constructor") &&amp; mixins.constructor,
             matcher = util$selectormatcher$$default(selector);
 
         return function(node, mock)  {
@@ -439,7 +439,7 @@
                     if (prop !== "constructor") {
                         el[prop] = value;
 
-                        return !mock && prop[0] === "_";
+                        return !mock &&amp; prop[0] === "_";
                     }
                 });
 
@@ -609,7 +609,7 @@
                     util$index$$each.call(node.children, applyExtensions);
                 };
 
-            if (mappings && mappings.length) {
+            if (mappings &&amp; mappings.length) {
                 applyExtensions(result[0]);
             }
 
@@ -624,9 +624,9 @@
 
     }, function(methodName, all)  {return function(selector) {
         if (all) {
-            if (selector && typeof selector !== "string") throw new MethodError(methodName, arguments);
+            if (selector &&amp; typeof selector !== "string") throw new MethodError(methodName, arguments);
         } else {
-            if (selector && typeof selector !== "number") throw new MethodError(methodName, arguments);
+            if (selector &&amp; typeof selector !== "number") throw new MethodError(methodName, arguments);
         }
 
         var node = this[0],
@@ -686,7 +686,7 @@
 
         if (defaultStrategy === RETURN_FALSE) {
             return function(token, force) {
-                if (typeof force === "boolean" && nativeMethodName === "toggle") {
+                if (typeof force === "boolean" &&amp; nativeMethodName === "toggle") {
                     this[force ? "addClass" : "removeClass"](token);
 
                     return force;
@@ -739,7 +739,7 @@
                 if (node.contains) {
                     return node.contains(otherNode);
                 } else {
-                    return node.compareDocumentPosition(otherNode) & 16;
+                    return node.compareDocumentPosition(otherNode) &amp; 16;
                 }
             }
 
@@ -802,7 +802,7 @@
         };
 
         util$stylehooks$$hooks.set[key] = function(value, style)  {
-            if (value && "cssText" in style) {
+            if (value &&amp; "cssText" in style) {
                 // normalize setting complex property across browsers
                 style.cssText += ";" + key + ":" + value;
             } else {
@@ -820,7 +820,7 @@
                 style = node.style,
                 computed;
 
-            if (len === 1 && (typeof name === "string" || util$index$$isArray(name))) {
+            if (len === 1 &&amp; (typeof name === "string" || util$index$$isArray(name))) {
                 var strategy = function(name)  {
                     var getter = util$stylehooks$$default.get[name] || util$stylehooks$$default.find(name, style),
                         value = typeof getter === "function" ? getter(style) : style[getter];
@@ -845,7 +845,7 @@
                 }
             }
 
-            if (len === 2 && typeof name === "string") {
+            if (len === 2 &&amp; typeof name === "string") {
                 var setter = util$stylehooks$$default.set[name] || util$stylehooks$$default.find(name, style);
 
                 if (typeof value === "function") {
@@ -859,7 +859,7 @@
                 } else {
                     style[setter] = typeof value === "number" ? value + "px" : value.toString();
                 }
-            } else if (len === 1 && name && typeof name === "object") {
+            } else if (len === 1 &&amp; name &&amp; typeof name === "object") {
                 util$index$$keys(name).forEach(function(key)  { this$0.css(key, name[key]) });
             } else {
                 throw new MethodError("css", arguments);
@@ -868,7 +868,7 @@
             return this;
         }
     }, null, function()  {return function(name) {
-        if (arguments.length === 1 && util$index$$isArray(name)) {
+        if (arguments.length === 1 &&amp; util$index$$isArray(name)) {
             return {};
         }
 
@@ -975,7 +975,7 @@
                 result = node.getElementsByClassName(quickMatch[2]);
             }
 
-            if (result && !all) result = result[0];
+            if (result &&amp; !all) result = result[0];
         } else {
             old = true;
             context = node;
@@ -1039,7 +1039,7 @@
             case "button":
                 var button = e.button;
                 // click: 1 === left; 2 === middle; 3 === right
-                return button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) );
+                return button &amp; 1 ? 1 : ( button &amp; 2 ? 3 : ( button &amp; 4 ? 2 : 0 ) );
             case "pageX":
                 return e.clientX + docEl.scrollLeft - docEl.clientLeft;
             case "pageY":
@@ -1082,7 +1082,7 @@
                 e = e || WINDOW.event;
                 // early stop in case of default action
                 if (util$eventhandler$$EventHandler.skip === type) return;
-                if (handler._type === CUSTOM_EVENT_TYPE && e.srcUrn !== type) {
+                if (handler._type === CUSTOM_EVENT_TYPE &&amp; e.srcUrn !== type) {
                     return; // handle custom events in legacy IE
                 }
                 // srcElement can be null in legacy IE when target is document
@@ -1114,7 +1114,7 @@
             };
 
         if (hook) handler = hook(handler, type) || handler;
-        if (JSCRIPT_VERSION < 9 && !("on" + (handler._type || type) in node)) {
+        if (JSCRIPT_VERSION < 9 &&amp; !("on" + (handler._type || type) in node)) {
             // handle custom events for IE8
             handler._type = CUSTOM_EVENT_TYPE;
         }
@@ -1162,7 +1162,7 @@
             }
 
             // call native function to trigger default behavior
-            if (canContinue && node[type]) {
+            if (canContinue &&amp; node[type]) {
                 // prevent re-triggering of the current event
                 util$eventhandler$$default.skip = type;
 
@@ -1234,7 +1234,7 @@
 
             if (value != null) {
                 // try to recognize and parse  object notation syntax
-                if (value[0] === "{" && value[value.length - 1] === "}") {
+                if (value[0] === "{" &&amp; value[value.length - 1] === "}") {
                     try {
                         value = JSON.parse(value);
                     } catch (err) {
@@ -1308,7 +1308,7 @@
     }, function(methodName, fastStrategy, requiresParent, strategy)  {return function() {var contents = SLICE$0.call(arguments, 0);var this$0 = this;
         var node = this[0];
 
-        if (requiresParent && !node.parentNode) return this;
+        if (requiresParent &&amp; !node.parentNode) return this;
 
         // the idea of the algorithm is to construct HTML string
         // when possible or use document fragment as a fallback to
@@ -1401,8 +1401,8 @@
             this._["handler2001004"] = this._["handler2001004"].filter(function(handler)  {
                 var skip = type !== handler.type;
 
-                skip = skip || selector && selector !== handler.selector;
-                skip = skip || callback && callback !== handler.callback;
+                skip = skip || selector &&amp; selector !== handler.selector;
+                skip = skip || callback &&amp; callback !== handler.callback;
 
                 if (skip) return true;
 
@@ -1504,7 +1504,7 @@
                 oldValue = this.get(name);
             }
 
-            if (arguments.length === 1 && typeof name !== "object") {
+            if (arguments.length === 1 &&amp; typeof name !== "object") {
                 // TODO: remove this check in future
                 return this.value(name);
             }
@@ -1539,7 +1539,7 @@
                 throw new MethodError("set", arguments);
             }
 
-            if (watchers && oldValue !== value) {
+            if (watchers &&amp; oldValue !== value) {
                 watchers.forEach(function(w)  {
                     util$index$$safeCall(this$0, w, value, oldValue);
                 });
@@ -1561,7 +1561,7 @@
         closest: "parentNode"
 
     }, function(methodName, propertyName)  {return function(selector) {
-        if (selector && typeof selector !== "string") throw new MethodError(methodName, arguments);
+        if (selector &&amp; typeof selector !== "string") throw new MethodError(methodName, arguments);
 
         var all = methodName.slice(-3) === "All",
             matcher = util$selectormatcher$$default(selector),
@@ -1575,7 +1575,7 @@
         }
 
         for (; it; it = it[propertyName]) {
-            if (it.nodeType === 1 && (!matcher || matcher(it))) {
+            if (it.nodeType === 1 &&amp; (!matcher || matcher(it))) {
                 if (!all) break;
 
                 nodes.push(it);
@@ -1599,7 +1599,7 @@
                     break;
 
                 default:
-                    name = node.type && "value" in node ? "value" : "innerHTML";
+                    name = node.type &&amp; "value" in node ? "value" : "innerHTML";
                 }
 
                 return node[name];
@@ -1757,7 +1757,7 @@
             animationName = null;
         }
 
-        if (callback && typeof callback !== "function") {
+        if (callback &&amp; typeof callback !== "function") {
             throw new MethodError(methodName, arguments);
         }
 
@@ -1836,7 +1836,7 @@
     }, null, function()  {return RETURN_THIS});
 
     DOM.constructor = function(node)  {
-        var nodeType = node && node.nodeType,
+        var nodeType = node &&amp; node.nodeType,
             ctr = nodeType === 9 ? $Document : $Element;
         // filter non elements like text nodes, comments etc.
         return ctr(nodeType === 1 || nodeType === 9 ? node : null);
@@ -1866,7 +1866,7 @@
         global$frame$$craf = WINDOW.cancelAnimationFrame,
         global$frame$$lastTime = 0;
 
-    if (!(global$frame$$raf && global$frame$$craf)) {
+    if (!(global$frame$$raf &&amp; global$frame$$craf)) {
         VENDOR_PREFIXES.forEach(function(prefix)  {
             prefix = prefix.toLowerCase();
 

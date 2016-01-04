@@ -224,7 +224,7 @@
             var delta, currentDate;
 
             // ENTER key should submit form if calendar is hidden
-            if (calendar.matches(":hidden") && which === VK_ENTER) return true;
+            if (calendar.matches(":hidden") &&amp; which === VK_ENTER) return true;
 
             if (which === VK_SPACE) {
                 calendar.toggle(); // SPACE key toggles calendar visibility
@@ -243,9 +243,9 @@
                 else if (which === 72 || which === 37) { delta = -1; }
 
                 if (delta) {
-                    if (shiftKey && (which === 40 || which === 38)) {
+                    if (shiftKey &&amp; (which === 40 || which === 38)) {
                         currentDate.setUTCFullYear(currentDate.getUTCFullYear() + (delta > 0 ? 1 : -1));
-                    } else if (shiftKey && (which === 37 || which === 39)) {
+                    } else if (shiftKey &&amp; (which === 37 || which === 39)) {
                         currentDate.setUTCMonth(currentDate.getUTCMonth() + (delta > 0 ? 1 : -1));
                     } else {
                         currentDate.setUTCDate(currentDate.getUTCDate() + delta);
