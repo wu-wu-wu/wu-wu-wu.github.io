@@ -26,7 +26,7 @@ main {
 
 .container {
   position: relative;
-  width: 88%;
+  width: 92%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 32px;
@@ -873,7 +873,14 @@ footer div .columns.no-border {
 }
 
 /* Responsive Google Maps*/
-.google-maps
+.google-maps {
+}
+
+@media (min-width: 550px) { 
+  .google-maps {
+    display: inherit;
+  }
+}
 
 /* top and bottom divider ------------------*/
 .top-divider {
