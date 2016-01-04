@@ -820,7 +820,6 @@ footer a {
 }
 
 footer .button {
-  white-space: normal;
 }
 
 footer.bg-color {
@@ -833,8 +832,16 @@ footer.bg-color {
 footer img {
 /* margin-top: -20px;
   margin-bottom: 8px;*/
-  padding-right: 104px;
+  padding-right: 8px;
+  width: 60%
+}
 
+@media (min-width: 700px) {
+  footer img {
+  /* margin-top: -20px;
+    margin-bottom: 8px;*/
+    width: 70%;
+  }
 }
 
 footer p {
