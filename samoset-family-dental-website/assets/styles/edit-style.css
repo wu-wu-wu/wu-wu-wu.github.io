@@ -12,6 +12,16 @@
 - Clearing
 */
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"); /* IE6-IE8 */
+  src: local("☺"),
+    url("../fonts/icomoon.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.svg#icomoon") format("svg"); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
 
 main {
     display: block
@@ -169,6 +179,15 @@ use for logo or multiple images on one line mobile*/
   padding-right: 32px;
 }
 
+.value-props-32-right-non-mobile {
+  padding-right: 0px;
+}
+@media (min-width: 800px) {
+  .value-props-32-right-non-mobile {
+    padding-right: 32px;
+  }
+}
+
 .value-props-32-bottom{
   padding-bottom: 32px;
 }
@@ -320,6 +339,14 @@ p {
   font-weight: 400;
 }
 
+.caption-top {
+  color: #666;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: -8px;
+}
+
 /*p::first-letter {
   font-weight: 500;
   font-size: 32px;
@@ -437,6 +464,7 @@ a {
   box-sizing: border-box;
   /* break word */
   word-wrap: break-word;
+  margin-bottom: 0;
 
   -ms-word-break: break-all;
   /* This is the dangerous one in WebKit, as it breaks things wherever */
@@ -453,13 +481,53 @@ a {
   text-decoration: none;
 }
 
-.button-blue {
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+/* button hover effects!*/
+.button:hover {
+  color: black;
+  background-color: #07C6EB;
+  border-radius: 4px;
+  border: 1px solid #07C6EB;
+}
+
+/* footer button hover effects!*/
+.button-dark-outline {
   display: inline-block;
-  padding: 0 32px;
-  color: #2C3F53;
+  height: 38px;
+  padding: 0 30px;
+  color: white;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+  margin-bottom: 1em;
+}
+
+.button-dark-outline:hover {
+  color: #2C3F53;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-weight: 800;
+}
+
+/* footer button hover effects!*/
+.button-dark {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -467,23 +535,70 @@ a {
   white-space: nowrap;
   background-color: white;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 1px solid transparent;
   cursor: pointer;
-  box-sizing: border-box;
-  /* break word */
-  word-wrap: break-word;
+  box-sizing: border-box; 
+  margin-bottom: 1em;
+}
 
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
+.button-dark:hover {
+  color: white;
+  background-color: #2C3F53;
+  border-radius: 4px;
+  border: 1px solid #2C3F53;
+  font-weight: 600;
+}
 
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+/* footer button hover effects!*/
+.button-light {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+  margin-bottom: 1em;
+}
+
+.button-light:hover {
+  color: white;
+  background-color: #07C6EB;
+  border-radius: 4px;
+  border: 1px solid #07C6EB;
+  font-weight: 600;
+}
+
+/*.selected a{
+   -moz-box-shadow:    inset 0 0 10px #666;
+   -webkit-box-shadow: inset 0 0 10px #666;
+   box-shadow:         inset 0 0 10px #666;
+}*/
+
+/* Glyphicons -----------------------------*/
+/* glyphicons from icomoon.io*/
+
+.icon-font {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Forms
@@ -747,9 +862,8 @@ li {
   }
 }
 
-
-.gradient-top {
-  height: 80px;
+.gradient-top-home {
+  height: 72px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -760,8 +874,28 @@ li {
 }
 
 @media (min-width: 400px){
+  .gradient-top-home {
+    height: 80px;
+  }
+}
+
+
+.gradient-top {
+  height: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+@media (min-width: 550px){
   .gradient-top {
-    height: 100px;}
+    height: 40px;
+    margin-top: -2px;
+  }
 }
 
 .gradient-bottom {
@@ -776,7 +910,7 @@ li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
 }
 
-@media (min-width: 400px){
+@media (min-width: 550px){
   .gradient-bottom {
     height: 70px;
   }
@@ -815,11 +949,8 @@ footer a {
   display: inline-block;     
   position: relative;    
   z-index: 1;     
-  padding: .3em 2em;     
-  margin: -.3em -2em; 
-}
-
-footer .button {
+  padding: .3em 3em;     
+  margin: -.3em -3em; 
 }
 
 footer.bg-color {
@@ -871,6 +1002,41 @@ footer div .columns.no-border {
   border-right: none;
 }
 
+.blue-bg {
+  background: none;
+  background-color: #07C6EB;  
+  overflow-x: auto;
+  padding: 32px;
+}
+
+.dark-blue-bg {
+  background: none;
+  background-color: #2C3F53;
+  overflow-x: auto;
+  padding: 32px;
+}
+
+.grey-bg {
+  background: none;
+  background-color: #666;
+  overflow-x: auto;
+  padding: 32px;
+}
+
+.white-bg {
+  background: none;
+  background-color: white;
+  overflow-x: auto;
+  padding: 32px;
+}
+
+.transparent-bg {
+  background: none;
+  background-color: transparent;
+  overflow-x: auto;
+  padding: 32px;
+}
+
 .blue {
   color: #07C6EB;
 }
@@ -890,11 +1056,11 @@ footer div .columns.no-border {
 }
 
 /* top and bottom divider ------------------*/
-.top-divider {
+.divider-top {
   border-top: 1px solid grey;
 }
 
-.bottom-divider {
+.divider-bottom {
   border-bottom: 1px solid grey;
 }
 
