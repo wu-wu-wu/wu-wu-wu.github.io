@@ -278,12 +278,14 @@ h3 {
   font-size: 22px;
   letter-spacing: 0;
   font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+  font-weight: 400;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
   h3 {
   font-size: 1.999em;
   letter-spacing: 0;
+  font-weight: 300;
   }
 }
 
@@ -745,19 +747,26 @@ li {
 
 /* mobile navigation 
 --------------------------------------------*/
-#nav-mobile ul li a {
+#nav-mobile ul a{
     display: block;
     padding: 12px 8px;
     border-bottom: 1px solid #ccc;
-  font-size: 20px;
+    font-size: 20px;
     text-decoration: none;
     text-align: center;
     margin: 0;
 }
 
+#nav-mobile ul a:hover{
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    color: #2C3F53;
+    background-color: #07C6EB;
+}
+
 .nav-mobile--anchor-link {
     text-align: center;
-    padding: 10px 15px;
+    padding: 8px 12px;
     color: #fff;
     background-color: #0084B4;
     text-decoration: none;
@@ -768,6 +777,39 @@ li {
 @media (min-width: 700px) {
   .nav-mobile--anchor-link { display: none; }
 }
+
+/* to be continued ... ! 
+#nav-mobile-sitemap ul a{
+    display: block;
+    padding: 12px 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+#nav-mobile-sitemap ul a:hover{
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    color: #2C3F53;
+    background-color: #07C6EB;
+}
+
+.nav-mobile-sitemap--anchor-link {
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0084B4;
+    text-decoration: none;
+    float: right;
+    box-sizing: border-box;
+}
+  
+@media (min-width: 700px) {
+  .nav-mobile-sitemap--anchor-link { display: none; }
+}*/
 
 /* if not on mobile ----------------------*/
 @media all and (min-width:700px){
@@ -790,7 +832,6 @@ li {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
@@ -1002,35 +1043,42 @@ footer div .columns.no-border {
   border-right: none;
 }
 
-.blue-bg {
+.bg-blue {
   background: none;
   background-color: #07C6EB;  
   overflow-x: auto;
   padding: 32px;
 }
 
-.dark-blue-bg {
+bg-blue-2 {
+  background: none;
+  background-color: #0084B4;  
+  overflow-x: auto;
+  padding: 32px;
+}
+
+.bg-dark-blue {
   background: none;
   background-color: #2C3F53;
   overflow-x: auto;
   padding: 32px;
 }
 
-.grey-bg {
+.bg-grey {
   background: none;
   background-color: #666;
   overflow-x: auto;
   padding: 32px;
 }
 
-.white-bg {
+.bg-white {
   background: none;
   background-color: white;
   overflow-x: auto;
   padding: 32px;
 }
 
-.transparent-bg {
+.bg-transparent {
   background: none;
   background-color: transparent;
   overflow-x: auto;
@@ -1043,6 +1091,10 @@ footer div .columns.no-border {
 
 .white {
   color: white;
+}
+
+.black {
+  color: black;
 }
 
 /* Responsive Google Maps*/
