@@ -11,7 +11,8 @@
             'firebase', //inside of firebase.js file
         
             // Custom modules that we've written.
-            'app.landing'
+            'app.landing',
+            'app.waitList'
         ]);
     
 })(); //immediately run function
