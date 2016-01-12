@@ -866,6 +866,16 @@ li {
 }
 
 
+.nav-primary .selected {
+  background-color: #EBF5FA;
+  color: #2C3F53;
+  pointer-events: none;
+  cursor: default;
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+  border-color: #919799;
+}
+
 /* full width style --------------------------*/
 .full-width {
   clear: both;
