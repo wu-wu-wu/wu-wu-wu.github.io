@@ -48,6 +48,14 @@ main {
   box-sizing: border-box; }
 
 /* navigation columns -------------------------------*/
+.three-and-half.columns {
+}
+
+@media (min-width: 550px){
+  .three-and-half.columns {
+    width: 24%;
+  }
+}
 /* this class will break down into halves ; 
 use for logo or multiple images on one line mobile*/
 .flex-2.columns {
@@ -185,6 +193,15 @@ use for logo or multiple images on one line mobile*/
 @media (min-width: 800px) {
   .value-props-32-right-non-mobile {
     padding-right: 32px;
+  }
+}
+
+.value-props-48-right-non-mobile {
+  padding-right: 0px;
+}
+@media (min-width: 800px) {
+  .value-props-48-right-non-mobile {
+    padding-right: 48px;
   }
 }
 
