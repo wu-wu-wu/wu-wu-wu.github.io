@@ -39,8 +39,13 @@ main {
   width: 92%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 32px;
   box-sizing: border-box; }
+@media (min-width: 600px){
+  .container {
+    padding: 0 32px;
+  }
+}
+
 .column,
 .columns {
   width: 100%;
@@ -312,7 +317,8 @@ h3 {
 h4 {
   font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 0px;
 }
 
 h5 {
