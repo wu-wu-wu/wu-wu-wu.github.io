@@ -148,12 +148,6 @@ use for logo or multiple images on one line mobile*/
 
 /* Base Styles
 --------------------------------------------------*/
-/* div centering */
-.center {
-  text-align: center;
-  margin: auto;
-}
-
 .background h2:before, .background h2:after {
   background-color: #ddd;
   content: '\a0';
@@ -167,6 +161,12 @@ use for logo or multiple images on one line mobile*/
 }
 .background h2:after {
   margin-left:10px;
+}
+
+/* div centering */
+.center {
+  text-align: center;
+  margin: auto;
 }
 
 /* spacing */
@@ -186,6 +186,10 @@ use for logo or multiple images on one line mobile*/
 
 .value-props-32-top {
   padding-top: 32px;
+}
+
+.value-props-32-bottom {
+  padding-bottom: 32px;
 }
 
 .value-props-32-right {
