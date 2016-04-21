@@ -355,7 +355,7 @@ p {
 
 @media (min-width: 600px) {
   p {
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
     letter-spacing: 0;
   }
@@ -445,6 +445,10 @@ p {
 
 .bold {
   font-weight: 900;
+}
+
+.weight600{
+  font-weight: 600;
 }
 
 /* typography - font size classes */
@@ -832,6 +836,7 @@ li {
     text-decoration: none;
     float: right;
     box-sizing: border-box;
+    border-radius:8px;
 }
 
 @media (min-width: 700px) {
