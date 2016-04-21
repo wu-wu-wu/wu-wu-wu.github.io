@@ -258,17 +258,17 @@ use for logo or multiple images on one line mobile*/
 ---------------------------------------------------*/
 
 body {
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 h1, nav {
-  font-family: 'Volkhov', 'Book Antiqua', 'Palatino', sans-serif;
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
 }
 
 h1 {
   color: #666666;
   font-size: 2.827em;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -.4px;
 }
 
@@ -284,7 +284,7 @@ h2 {
   font-size: 2.3em;
   letter-spacing: 0;
   color: #2F3A48;
-  font-weight: 300;
+  font-family:'Source Serif Pro';
 }
 
 @media (min-width: 450px) {
@@ -306,7 +306,7 @@ h2 {
 h3 {
   font-size: 1.5em;
   letter-spacing: 0;
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-weight: 500;
 }
 
@@ -319,7 +319,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0px;
@@ -327,7 +327,7 @@ h4 {
 
 h5 {
   font-size: 20px;
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-weight: 300;
 }
 
@@ -388,7 +388,7 @@ p {
 
 .blockquote {
   text-align: center;
-  font-family: 'Volkhov', 'Book Antiqua', 'Palatino', sans-serif;
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
   font-weight: 100;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -475,7 +475,7 @@ a {
 /* buttons
 -------------------------------------------*/
 .button a p {
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   display: inline-block;
   padding: 0 32px;
   color: #555;
@@ -667,7 +667,7 @@ a {
 legend {
   font-size: 22px;
   letter-spacing: 0;
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-weight: 200;
 }
 
@@ -735,6 +735,7 @@ li {
 
 /* navigation list */
 .nav-primary ul {
+  font-weight:600;
   display: none;
 }
 
@@ -771,7 +772,7 @@ li {
     color: #0FA0CE;
     padding: 8px 16px 8px 16px;
     font-size: 16px;
-    font-family: 'Volkhov', 'Book Antiqua', 'Palatino', sans-serif;
+    font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
   }
 }
 
@@ -878,7 +879,7 @@ li {
 
 /* bottom navigation ---------------------*/
 .nav-bottom {
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   display: inline-block;
   height: 40px;
   padding: 0 32px;
@@ -927,13 +928,13 @@ li {
 /* home banner -----------------------*/
 .opening-text {
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 22px;
   letter-spacing: 0em;
   margin-top: 37px;
-  line-height: 1.55em;
+  line-height: 1.32em;
   color: #2F3A48;
-  font-family: 'Volkhov', 'Book Antiqua', 'Palatino', sans-serif;
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
 }
 
 @media (min-width: 450px) {
@@ -1067,7 +1068,7 @@ footer.bg-color {
   background: none;
   background-color: #2C3F53;
   overflow-x: auto;
-  font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 footer img {
