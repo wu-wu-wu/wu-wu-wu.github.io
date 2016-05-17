@@ -146,6 +146,33 @@ use for logo or multiple images on one line mobile*/
   }
 }
 
+/* Image / thumbnails
+---------------------------------------------*/
+.thumbnail {
+  position: relative;
+  width: 275px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*height: 100%;*/
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+
 /* Base Styles
 --------------------------------------------------*/
 .background h2:before, .background h2:after {
@@ -320,7 +347,7 @@ h3 {
 
 h4 {
   font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: 0px;
 }
@@ -374,6 +401,10 @@ p {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: -8px;
+}
+
+.all-caps {
+  text-transform: uppercase;
 }
 
 /*p::first-letter {
@@ -435,6 +466,33 @@ p {
 }
 
 /* typography - font weight classes */
+.staff-title-1 {
+  margin-bottom: 0;
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1EAEDB;
+}
+@media (min-width:600px){
+  .staff-title-1{
+    font-size: 30px;
+  }
+}
+
+.staff-title-2{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size:20px;
+  letter-spacing: .5px;
+}
+@media (min-width:600px){
+  .staff-title-2{
+    font-size: 24px;
+  }
+}
+
+
+
 .regular {
   font-weight: 400;
 }
@@ -447,8 +505,16 @@ p {
   font-weight: 900;
 }
 
+.weight500{
+  font-weight: 500;
+}
+
 .weight600{
   font-weight: 600;
+}
+
+.weight700{
+  font-weight: 700;
 }
 
 /* typography - font size classes */
@@ -456,6 +522,9 @@ p {
   font-size: 2.827em;
 }
 
+.serif {
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
+}
 
 /* links
 -----------------------------------------*/
@@ -474,6 +543,15 @@ a {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+/* link a color customizations
+------------------------------------------------------*/
+.a-black-blue {
+  color:black;
+}
+
+.a-black-blue:hover {
+  color:#1EAEDB;
 }
 
 /* buttons
@@ -678,6 +756,20 @@ legend {
 input, select, textarea {
   font-size: 16px;
 }
+
+/* new
+---------------------------------*/
+input[type="submit"], input[type="reset"], input[type="button"]{
+  font-size: 17px;
+  background-color:white;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+  font-size: 17px;
+  color: white;
+  background-color:#07C6EB;
+}
+/*------------------------------*/
 
 .note {
   text-transform: uppercase;
@@ -950,7 +1042,7 @@ li {
 
 .banner-home {
   height: 250px;
-  background: url('../images/plymouth-bay.png') no-repeat center center;
+  background: url('../images/plymouth-bay.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
