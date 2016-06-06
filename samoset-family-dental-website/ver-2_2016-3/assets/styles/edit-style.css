@@ -1081,7 +1081,7 @@ li {
 @media (min-width: 400px) {
   .banner-home {
     height: 380px;
-    background: url('../images/plymouth-bay.png') no-repeat center center;
+    background: url('../images/plymouth-bay.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
