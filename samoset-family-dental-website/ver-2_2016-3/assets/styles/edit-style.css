@@ -1094,9 +1094,9 @@ li {
   }
 }
 
-.banner-blog-free-dental-day {
+.banner-2016-free-dental-day-props {
   height: 400px;
-  background: url('../images/free-dental-day-props-full.jpg') no-repeat center center;
+  background: url('../images/banner-2016-free-dental-day-props.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1106,6 +1106,36 @@ li {
   -webkit-justify-content: center;
         justify-content: center;
   margin-top: -4px;
+}
+
+.banner-blog-2015-old-memorial-article {
+  height: 10px;
+  background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-justify-content: center;
+        justify-content: center;
+  margin-top: -4px;
+}
+
+@media (min-width: 400px){
+  .banner-blog-2015-old-memorial-article {
+    height: 350px;
+    background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-justify-content: center;
+          justify-content: center;
+    margin-top: -4px;
+  }
 }
 
 .gradient-top-home {
