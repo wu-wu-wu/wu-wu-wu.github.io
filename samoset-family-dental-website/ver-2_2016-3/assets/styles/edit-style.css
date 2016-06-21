@@ -1126,7 +1126,7 @@ li {
 
 .banner-2016-free-dental-day {
   height: 200px;
-  background: url('../images/banner-2016-free-dental-day-props.jpg') no-repeat center center;
+  background: url('../images/2016-kids-corner-drawing.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1141,7 +1141,7 @@ li {
 @media (min-width: 500px){
   .banner-2016-free-dental-day {
     height: 300px;
-    background: url('../images/banner-2016-free-dental-day-props.jpg') no-repeat center center;
+    background: url('../images/2016-kids-corner-drawing.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1478,4 +1478,21 @@ bg-blue-2 {
   .mobile-show-2 {
     display: none;
   }
+}
+
+/*------------VIDEO EMBED----------------*/
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
