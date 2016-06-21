@@ -1094,8 +1094,38 @@ li {
   }
 }
 
-.banner-2016-free-dental-day-props {
-  height: 400px;
+.banner-2015-halloween-candy-buyback {
+  height: 150px;
+  background: url('../images/banner-2015-halloween-candy-buyback.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-justify-content: center;
+        justify-content: center;
+  margin-top: -4px;
+}
+
+@media (min-width: 450px){
+  .banner-2015-halloween-candy-buyback {
+    height: 275px;
+    background: url('../images/banner-2015-halloween-candy-buyback.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-justify-content: center;
+          justify-content: center;
+    margin-top: -4px;
+  }
+}
+
+.banner-2016-free-dental-day {
+  height: 200px;
   background: url('../images/banner-2016-free-dental-day-props.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1108,8 +1138,24 @@ li {
   margin-top: -4px;
 }
 
+@media (min-width: 500px){
+  .banner-2016-free-dental-day {
+    height: 300px;
+    background: url('../images/banner-2016-free-dental-day-props.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-justify-content: center;
+          justify-content: center;
+    margin-top: -4px;
+  }
+}
+
 .banner-blog-2015-old-memorial-article {
-  height: 10px;
+  height: 200px;
   background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1122,9 +1168,9 @@ li {
   margin-top: -4px;
 }
 
-@media (min-width: 400px){
+@media (min-width: 500px){
   .banner-blog-2015-old-memorial-article {
-    height: 350px;
+    height: 400px;
     background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1137,6 +1183,37 @@ li {
     margin-top: -4px;
   }
 }
+
+.banner-2016-yankee-dental-con-team {
+  height: 150px;
+  background: url('../images/banner-2016-yankee-dental-con-team.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-justify-content: center;
+        justify-content: center;
+  margin-top: -4px;
+}
+
+@media (min-width: 400px){
+  .banner-2016-yankee-dental-con-team {
+    height: 250px;
+    background: url('../images/banner-2016-yankee-dental-con-team.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-justify-content: center;
+          justify-content: center;
+    margin-top: -4px;
+  }
+}
+
 
 .gradient-top-home {
   height: 72px;
