@@ -80,14 +80,16 @@
   <!-- First Visit Walkthrough -->
   <main class="full-width bg-color">
     <div class="container value-props-48">
-      <div class="offset-by-one nine columns">
+      <div class="offset-by-two eight columns">
         <h2 class="weight600">Free Dental Day 2016</h2>
         <h3 class="blue">Totally not a joke &mdash;yes! a free dental day</h3>
       </div>
-<div class="offset-by-one nine columns value-props-24-bottom">
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/La1TjZ4Vo24" frameborder="0" allowfullscreen></iframe></div></div>
 
-      <div class="offset-by-one eight columns">
+      <div class="offset-by-two eight columns value-props-24-bottom">
+        <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/La1TjZ4Vo24" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+
+      <div class="offset-by-two eight columns">
         <p>We want everyone to have better teeth but let&rsquo;s be honest&hellip; dental care is the last thing on anyone&rsquo;s mind or budget, especially when they don&rsquo;t have dental insurance.</p>
 
         <p>Dental care is the easiest on your time and wallet when it is routinely done as part of your daily ritual &mdash; brushing and flossing for a few minutes twice every day and visiting the dentist every 6 months to clean out more stubborn leftover bacteria and repair any small fillings to prevent further damage.</p>
@@ -102,28 +104,31 @@
         <p>In the days leading up to the event, we made space in our waiting room and set-up a kid&rsquo;s corner fully-furnished with toys and a sitting area filled with arts and crafts for our younger visitors.</p>
       </div>
 
-      <div class="offset-by-one seven columns">
+      <div class="offset-by-two eight columns">
         <img class="u-max-full-width value-props-24-bottom" src="../assets/images/2016-kids-corner-drawings-2.png">
       </div>
 
-      <div>
+      <div class="offset-by-two eight columns">
         <p>We also assembled goodie bags filled with dental care items for everyone who came by and designed an educational pamphlet for after-appointment oral care. <a href="http://www.colgate.com/en/us/oc/">Sandy from Colgate</a> was gracious enough to donate boxes of dental tooth brushes, toothpaste and literature for our cause.</p>
       </div>
 
-      <div class="offset-by-one seven columns">
+      <div class="offset-by-two eight columns">
         <img class="u-max-full-width value-props-24-bottom" src="../assets/images/blog-2016-free-dental-day-sandy.jpg">
       </div>
 
-      <div class="offset-by-one eight columns">
+      <div class="offset-by-two eight columns">
         <p>We scheduled to book our patients on a Friday, April 1st. This was no April fools! Right at 8:00am sharp, the phone began to ring, in came another call, and another, and another. Within 2 hours, the entire day was filled! Everyone who called afterwards was put on a waitlist.</p>
 
         <h3>The Big Day</h3>
         <p>When the day came patients streamed in and received exams, cleanings, x-rays, fillings as needed and sealants and fluoride for the kids. Each patient had an unique story. Some had previously been receiving dental care and were in overall good health; some patients, however, discovered that years of neglect had led to a series of problems. These ranged from periodontitis (a serious gum disease) to deep decays that may end up as a root canal treatment.&nbsp;</p>
         <p>After patients had their appointments we handed them a goodie bag filled with dental care items and an printout with step-by-step instructions on how to brush and how to floss along with recommended foods and behaviors about what they need to do to keep their teeth.</p>
       </div>
-      <div class="offset-by-one seven columns">
-        <img class="u-max-full-width value-props-24-bottom" src="../assets/images/blog-2016-free-dental-day-child.jpg"></div>
-      <div class="offset-by-one eight columns">
+
+      <div class="offset-by-two eight columns">
+        <img class="u-max-full-width value-props-24-bottom" src="../assets/images/blog-2016-free-dental-day-child.jpg">
+      </div>
+
+      <div class="offset-by-two eight columns">
         <p>The day was successfully completed with satisfied patients and a tired but fulfilled office staff. We all were moved by how grateful patients were for our services and the variety of patients we had seen. In the future we&rsquo;ll continue to care for all patients &mdash; including having future events like this to make it possible for patients to get treatment in an office that&rsquo;s constantly improving, that&rsquo;s our goal.</p>
 
         <h3>Final Thoughts:</h3>
@@ -147,7 +152,42 @@
 
       <div class="bg-color-2 value-props-48-bottom">
         <div class="container">
-        <h3 class="value-props-48-top">Blog Archive</h3>
+          <div class="offset-by-two eight columns">
+            <section class="container">
+                <h3 id="learn-more-free-dental-day">Learn More</h3>
+                <p>If you'd like to know about our next free dental day, please pleave your contacts here:</p>
+
+                <form id="form-learn-more-free-dental-day" action="https://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST"> <!--data-parsley-validate-->
+
+                <!-- Form Section 1-->
+                <fieldset>
+                  <legend class="instructions">Contact Info</legend>
+
+                  <section>
+                    <!-- Patient Name -->
+                    <label for="patientnameinput">Name</label>
+                    <input type="text" id="patientnameinput" name="Name" placeholder="First and Last Name" data-validate="notBlank signUpName" title="please enter your name" aria-required="true" required><br>
+
+                    <!-- Patient Phone Number -->
+                    <label for="patientnumberinput">Phone Number</label>
+                    <input type="tel" id="patientnumberinput" name="Phone" placeholder="555 555 5555" data-validate="notBlank" title="please enter the best number for us to reach you" aria-required="true" required>
+
+                    <!-- Patient Email -->
+                    <label for="patientemailinput">Email</label>
+                    <input type="email" id="patientemailinput" name="mailfrom" placeholder="myemail@example.com">
+                    <label for="emailinput" id="emailinputnote" class="note">NOTE: We'll never share your email, promise.</label>
+                  </section>
+                </fieldset>
+
+                <!-- submit button -->
+                <fieldset id="form-submit">
+                  <input type="hidden" name="sendtoemail" value="info@samosetfamilydental.com"><br>
+                  <input type="submit" name="submit" id="submitbutton" value="Submit">
+                </fieldset>
+
+          </div>
+
+        <!--h3 class="value-props-48-top">Blog Archive</h3>
         <div class="row">
           <div class="five columns">
             <h4>2016</h4>
@@ -171,8 +211,9 @@
 
 
           </div>
-        </div>
+        </div-->
       </div>
+
   </main>
 
   <!-- mobile navigation -->

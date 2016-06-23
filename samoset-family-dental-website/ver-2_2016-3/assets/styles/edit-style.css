@@ -1110,7 +1110,7 @@ li {
 
 @media (min-width: 450px){
   .banner-2015-halloween-candy-buyback {
-    height: 275px;
+    height: 350px;
     background: url('../images/banner-2015-halloween-candy-buyback.jpg') no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1126,7 +1126,7 @@ li {
 
 .banner-2016-free-dental-day {
   height: 200px;
-  background: url('../images/2016-kids-corner-drawing.jpg') no-repeat center center;
+  background: url('../images/free-dental-day-illustration.jpg') no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1140,8 +1140,8 @@ li {
 
 @media (min-width: 500px){
   .banner-2016-free-dental-day {
-    height: 300px;
-    background: url('../images/2016-kids-corner-drawing.jpg') no-repeat center center;
+    height: 350px;
+    background: url('../images/free-dental-day-illustration.jpg') no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1156,7 +1156,7 @@ li {
 
 .banner-blog-2015-old-memorial-article {
   height: 200px;
-  background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat top center;
+  background: url('../images/banner-2015-old-memorial-article.jpg') no-repeat middle center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
