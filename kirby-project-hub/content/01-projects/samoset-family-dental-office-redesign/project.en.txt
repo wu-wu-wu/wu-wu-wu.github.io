@@ -1,0 +1,25 @@
+Info: 
+
+----
+
+Title: Samoset Family Dental Office Renovation
+
+----
+
+Description: August 2016 - August 2017
+
+----
+
+Client: admin
+
+----
+
+Passwordprotected: true
+
+----
+
+Rssfeed: false
+
+----
+
+Text: 

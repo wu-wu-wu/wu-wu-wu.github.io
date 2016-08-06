@@ -1,0 +1,21 @@
+Title: Suzanne Wu Web Design
+
+----
+
+Author: Suzanne Wu
+
+----
+
+Description: Client Project Hub
+
+----
+
+Keywords: Kirby,CMS,project,hub
+
+----
+
+Copyright: © (date: 2016) Suzanne Wu Web Design
+
+----
+
+Animations: false

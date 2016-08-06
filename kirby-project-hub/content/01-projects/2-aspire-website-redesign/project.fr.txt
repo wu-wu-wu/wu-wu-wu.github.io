@@ -1,0 +1,21 @@
+Title: Exemple projet
+
+----
+
+Description: Refonte site internet
+
+----
+
+Client: sample-client
+
+----
+
+Text: 
+
+Voici le projet démo du [Kirby Project Hub Template](http://project-hub.net/). Vous pouvez désactiver le mode démonstration dans le fichier `config.php`.
+Veuillez consulter la [documentation](http://project-hub.net/documentation/) afin de découvrir comment utiliser la solution "Kirby Project Hub".
+Cet espace client affiche le progrès d'un projet à l 'aide d'un flux d'activité. Le bouton "travaux prévus" donne accès à une page qui affiche les tâches à effectuer dans le futur.
+
+----
+
+Passwordprotected: true

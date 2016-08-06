@@ -1,0 +1,57 @@
+Contentheadline: 
+
+----
+
+Title: Set Scope of Renovation
+
+----
+
+Description: Determined the deliverables by the end of the renovation. (1.5hrs)
+
+----
+
+Published: 2016-07-31
+
+----
+
+Icon: clipboard
+
+----
+
+Moreheadline: 
+
+----
+
+Text: 
+
+1. replace OP1
+  - chair
+  - air vacuum
+  - cabinets
+2. frontdesk
+  - change frontdesk shape and material (take out pillar)
+  - add walls (glass) dividers to front desk workspace section
+  - streamline workspace section (take out unused computer station)
+3. bathroom
+  - change flooring
+  - change mirror
+  - change sink surface
+4. Kitchen
+  - add door in kitchen
+  - add washer & dryer to kitchen closet
+  - new trash can
+  - replace fridge with smaller fridge
+5.  Other
+  - replace lights
+  - change curtains
+  - clean carpet
+  - fix doors to storage and lab
+  - change drop ceiling tiles
+
+----
+
+Link: 
+
+----
+
+Info: 

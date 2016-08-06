@@ -1,0 +1,68 @@
+Title:
+
+Première réunion
+
+----
+
+Description:
+
+Première rencontre dans les bureaux du client. Présentation du responsive web design.
+
+----
+
+Published:
+
+03/15/2015
+
+----
+
+Icon:
+
+calendar
+
+----
+
+Text:
+
+# Compte Rendu de la réunion
+
+8 août 2013
+
+### Participants
+
+John Smith, Jane Doe, Mark Johnson, Anne Miller, Lance Simpson
+
+### Secrétaire
+
+Mark Johnson
+
+### Agenda
+
+Old Business
+Lorem ipsum dolor sit amet
+Suspendisse scelerisque mi a mi
+Vestibulum ante ipsum primis
+New Business
+Sed sem urna pharetra nec
+Aenean interdum turpis at nonummy
+Praesent laoreetlips
+Curabitur molestie nisi
+
+### Anciennes affaires
+
+Lorem ipsum dolor sit amet consectetuer adipiscing elit. Suspendisse scelerisque mi a mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut sollicitudin ligula vitae odio. Aliquam et risus.
+Suspendisse scelerisque mi a mi congue facilisis orci. Fusce nulla dui, scelerisque vel, faucibus vehicula, feugiat at, massa. Maecenas at ipsum id elit lacinia aliquam. Sed sit amet ligula. In hac habitasse platea dictumst. Cras in nisi sit amet arcu aliquam vehicula. Etiam sed metus non metus vehicula scelerisque. Sed sem urna, pharetra nec, dictum quis, lacinia ut, nulla.
+Vestibulum ante ipsum primis elementum, libero interdum auctor cursus, sapien enim dictum quam, eget ornare nisi elit blandit ipsum. Phasellus vehicula nonummy nunc. Nulla facilisi. Sed eget magna. Phasellus laoreet nisi vitae magna. Suspendisse malesuada luctus metus. Nam non odio eget tellus ornare lacinia. Sed accumsan nonummy lorem.
+
+### Nouvelles affaires
+
+Sed sem urna pharetra nec et orci vel arcu fringilla accumsan. Nulla pharetra laoreet arcu. Phasellus feugiat elit eget lacus malesuada bibendum. Curabitur mattis nibh sit amet massa. Aliquam blandit justo id nunc. Nullam elementum est ut lacus.
+Aenean interdum turpis at nonummy adipiscing, nisl ut gravida cursus, tortor metus elementum libero, id placerat ipsum elit posuere nisl. Phasellus nisi leo, ultricies vitae, venenatis nec, feugiat sed, turpis. Sed nonummy consectetuer pede. Integer eu velit euismod sapien elementum sollicitudin. Praesent laoreet.
+Praesent laoreet sed erat. Vivamus ut purus in nisl fringilla dignissim. Maecenas purus elit, sodales id, volutpat ut, lobortis nec, nunc. Maecenas sapien velit, porttitor quis, sollicitudin vel, posuere sed, nibh.
+Curabitur molestie nisi et nisi. In diam orci, ultricies ut, sagittis eget, fermentum et, quam. Vestibulum aliquet, tortor non vestibulum accumsan, nulla ipsum pretium diam, semper faucibus pede arcu at dui. Morbi commodo erat quis lorem. Vivamus molestie posuere tellus.
+
+### Prochaine réunion
+
+Nulla velit orci, luctus vitae
+Ullamcorper at, varius diam
+Donec at turpis nec turpis ultrices

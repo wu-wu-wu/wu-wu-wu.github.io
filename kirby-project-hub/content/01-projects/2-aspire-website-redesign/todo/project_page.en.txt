@@ -1,0 +1,17 @@
+Title: Work planned
+
+----
+
+Text: 
+
+# Work planned
+
+This is a list of the future changes we will be implementing on your website.
+
+- [x] design responsive website
+- [x] find sustainable CMS
+- [x] develop website on CMS
+- [ ] create personas
+- [ ] get in touch with each key demographics for user interview
+- [ ] redesign homepage to reflect each persona journey
+- [ ] design landing page for Mentorship Program

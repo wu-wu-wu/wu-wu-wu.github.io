@@ -1,0 +1,29 @@
+Title: Responsive Wireframe Homepage
+
+----
+
+Description: sign off received from client
+
+----
+
+Published: 2015-05-01
+
+----
+
+Icon: layout
+
+----
+
+Text: 
+
+# Responsive Wireframe Homepage
+
+When creating a timeline item, you can add a link to more information. You can add a link to a content page, a link to an external webpage or a link to a downloadable file. This is an example of a content page you can create in the admin panel. Every content page you link to from the timeline can contain text, (link: https://github.com/groenewege/kirby-task-list text: github style task lists), images, videos and files. (link: http://getkirby.com/docs/content/text text: Learn more about formatting text, adding images, etc.)
+
+As you can see, these content pages are very handy for presenting **wireframes** and **mockups**. This wireframe is part of the responsive website wireframe kit of (link: http://uxkits.com/products/responsive-website-wireframe-kit text: UX Kits).
+
+(image: wireframe-home.jpg)
+
+----
+
+Link: 

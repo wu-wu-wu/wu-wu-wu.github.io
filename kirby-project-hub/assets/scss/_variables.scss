@@ -1,0 +1,27 @@
+// Colors
+
+$primary-color: #6C7580;
+$secondary-color: #888;
+
+$background: #fff;
+$font-color: #222;
+
+$light-grey: #E8EBED;
+$dark-grey: #343838;
+$grey: #B6BBBF;
+
+$light-yellow: #ffd;
+$light-blue: #dff;
+
+$border-color: #bbb;
+$link-color: lighten($primary-color, 10%);
+
+$error-color: #CC8F7A;
+$warning-color: #E5D273;
+$success-color: #ABB259;
+$info-color: #A3BECC;
+
+
+// Typography
+$font-family: "Fira Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+

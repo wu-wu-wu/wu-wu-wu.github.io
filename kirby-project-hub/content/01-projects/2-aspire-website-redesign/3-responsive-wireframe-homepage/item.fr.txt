@@ -1,0 +1,29 @@
+Title: Wireframe Page d'accueil
+
+----
+
+Description: feu vert du client
+
+----
+
+Published: 2015-05-01
+
+----
+
+Icon: layout
+
+----
+
+Text: 
+
+# Responsive Wireframe Page d'accueil
+
+Vous pouvez ajouter un lien à chaque élément du flux d'activité. Ceci est un exemple d'une page de contenu créé à partir de la console d'administration. (link: http://getkirby.com/docs/content/text text: Découvrez comment vous pouvez formater votre texte, ajouter des images, etc.) Le plugin (link: https://github.com/groenewege/kirby-task-list text: Kirby Task List) permet l'ajout de listes de tâches à effectuer.
+
+Vous pouvez utiliser une page de contenu pour présenter une **maquette graphique** ou une **maquette fil de fer**. Cette maquette est réalisée à l'aide du responsive wireframe kit de (link: http://uxkits.com/products/responsive-website-wireframe-kit text: UX Kits).
+
+(image: wireframe-home.jpg)
+
+----
+
+Link: 

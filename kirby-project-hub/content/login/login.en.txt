@@ -1,0 +1,5 @@
+Title: Login
+
+----
+
+Text: You can follow the progress of your project by logging in to the client area.

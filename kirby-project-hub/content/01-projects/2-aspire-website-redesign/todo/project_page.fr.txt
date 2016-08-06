@@ -1,0 +1,15 @@
+Title: Travaux prévus
+
+----
+
+Text: 
+
+# Travaux prévus
+
+Voici la liste des modifications futures prévues sur le site internet.
+
+- [x] nouveau logo
+- [ ] modification informations de contact
+- [ ] réaliser une page d'atterrissage  optimisée pour mobile
+- [ ] ajouter un formulaire d'inscription au newsletter
+- [ ] traduire la page d'accueil

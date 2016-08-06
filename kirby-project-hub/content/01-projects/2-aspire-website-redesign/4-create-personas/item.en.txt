@@ -1,0 +1,33 @@
+Contentheadline: 
+
+----
+
+Title: Create Personas
+
+----
+
+Description: Create persona for each key demographic
+
+----
+
+Published: 2016-07-30
+
+----
+
+Icon: user
+
+----
+
+Moreheadline: 
+
+----
+
+Text: 
+
+----
+
+Link: 
+
+----
+
+Info: 
