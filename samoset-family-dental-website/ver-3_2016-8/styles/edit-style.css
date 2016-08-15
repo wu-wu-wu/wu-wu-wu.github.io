@@ -1066,12 +1066,12 @@ li {
 
 .banner-home {
   height: 250px;
-  background: url('../images/plymouth-bay.jpg') no-repeat center center;
+  background: url('../images/hero-plymouth-bay-lg.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: -webkit-flex;
+  display: -webkit-flex;b
   display:         flex;
   -webkit-justify-content: center;
         justify-content: center;
@@ -1081,7 +1081,7 @@ li {
 @media (min-width: 400px) {
   .banner-home {
     height: 380px;
-    background: url('../images/plymouth-bay.jpg') no-repeat center center;
+    background: url('../images/hero-plymouth-bay-lg.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
