@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'DINPro';
 	src: url('../fonts/DINPro-Medium.eot');
-	src: url('fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
 		url('DINPro-Medium.woff') format('woff'),
 		url('DINPro-Medium.ttf') format('truetype');
 	font-weight: 500;
@@ -10,8 +10,8 @@
 
 @font-face {
 	font-family: 'DINPro';
-	src: url('fonts/DINPro-Bold.eot');
-	src: url('fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/DINPro-Bold.eot');
+	src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
 		url('DINPro-Bold.woff') format('woff'),
 		url('DINPro-Bold.ttf') format('truetype');
 	font-weight: 700;
@@ -20,8 +20,8 @@
 
 @font-face {
 	font-family: 'DINPro-CondBlack';
-	src: url('fonts/DINPro-CondBlack.eot');
-	src: url('fonts/DINPro-CondBlack.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/DINPro-CondBlack.eot');
+	src: url('../fonts/DINPro-CondBlack.eot?#iefix') format('embedded-opentype'),
 		url('DINPro-CondBlack.woff') format('woff'),
 		url('DINPro-CondBlack.ttf') format('truetype');
 	font-weight: 900;
@@ -30,8 +30,8 @@
 
 @font-face {
 	font-family: 'Whitney Book';
-	src: url('fonts/Whitney-Book.eot');
-	src: url('fonts/Whitney-Book.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/Whitney-Book.eot');
+	src: url('../fonts/Whitney-Book.eot?#iefix') format('embedded-opentype'),
 		url('Whitney-Book.woff') format('woff'),
 		url('Whitney-Book.ttf') format('truetype');
 	font-weight: 300;
@@ -40,8 +40,8 @@
 
 @font-face {
 	font-family: 'Whitney';
-	src: url('fonts/Whitney-Semibold.eot');
-	src: url('fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+	src: url('../fonts/Whitney-Semibold.eot');
+	src: url('../fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
 		url('Whitney-Semibold.woff') format('woff'),
 		url('Whitney-Semibold.ttf') format('truetype');
 	font-weight: 500;
