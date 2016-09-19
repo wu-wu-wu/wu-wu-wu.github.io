@@ -1,0 +1,72 @@
+html {
+  background: beige;
+  height: auto;
+  width: auto;
+  overflow-y: auto;
+}
+
+@media screen and (min-width:600px) {
+  div#box-1 {
+    width: 30vw;
+    height:30vw;
+    background: white;
+    border: 1px solid black;
+    position:relative;
+    margin: 0px;
+    margin: 8vw;
+  }
+
+  div#box-2 {
+    width: 55%;
+    max-height:90vw;
+    background: white;
+    border: 1px solid black;
+    position:absolute;
+    top: 8vw;
+    right: 0px;
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  div#box-3 {
+    position: fixed;
+    top: 40vw;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (max-width:599px) {
+  div#box-1 {
+    width: 80%;
+    margin-left:0;
+    height:80vw;
+    background: white;
+    border: 1px solid black;
+    position:relative;
+    margin: 0px;
+    margin: 8vw;
+  }
+
+  div#box-2 {
+    width: 100%;
+    max-height:90vw;
+    background: white;
+    border: 1px solid black;
+    position:absolute;
+    top: auto;
+    right: 0px;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0px 20px 0 20px;
+
+  }
+
+  div#box-3 {
+    margin-top: 300px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+  }
+}

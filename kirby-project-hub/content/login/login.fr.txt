@@ -1,5 +1,0 @@
-Title: Login
-
-----
-
-Text: Vous pouvez suivre l'évolution de votre projet en vous connectant à l'espace client.
