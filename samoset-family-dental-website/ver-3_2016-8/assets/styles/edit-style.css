@@ -93,7 +93,7 @@ use for logo or multiple images on one line mobile*/
 
 /* use for flexible nav-primary navigation */
 .flex-nav.columns {
-  width: 100%;
+  float: right;
 }
 
 @media (min-width: 400px){
@@ -104,13 +104,11 @@ use for logo or multiple images on one line mobile*/
 
 @media (min-width: 600px){
   .flex-nav.columns {
-    width: 100%;
   }
 }
 
 @media (min-width: 700px){
   .flex-nav.columns {
-    width: 100%;
   }
 }
 
@@ -170,7 +168,9 @@ use for logo or multiple images on one line mobile*/
   height: auto;
 }
 
-
+.center {
+  text-align: center;
+}
 
 /* Base Styles
 --------------------------------------------------*/
@@ -328,7 +328,7 @@ h2 {
   font-size: 2.3em;
   letter-spacing: 0;
   color: #2F3A48;
-  font-family:'Source Serif Pro';
+  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
 }
 
 @media (min-width: 450px) {
@@ -488,6 +488,11 @@ blockquote {
   }
 }
 
+.block {
+  background-color:white;
+  padding: 20px;
+}
+
 /* typography - font weight classes */
 .staff-title-1 {
   margin-bottom: 0;
@@ -513,8 +518,6 @@ blockquote {
     font-size: 24px;
   }
 }
-
-
 
 .regular {
   font-weight: 400;
@@ -657,7 +660,7 @@ a {
 .button-dark {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
+  padding: 0 24px;
   color: #555;
   text-align: center;
   font-size: 11px;
@@ -683,6 +686,17 @@ a {
   font-weight: 600;
 }
 
+.button-cta {
+  font-size: .93em;
+  text-align: center;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 1px 12px rgba(-1, 0, 0, 0.5);
+}
+
+.button-cta:hover {
+  box-shadow: inset 0 0 12px rgba(-1, 0, 0, 0.4);
+}
 /* footer button hover effects!*/
 .button-light {
   display: inline-block;
@@ -714,6 +728,13 @@ a {
   font-weight: 600;
 }
 
+.button-blue {
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: #07C6EB;
+}
+
 .button-large {
   display: inline-block;
   height: 56px;
@@ -740,6 +761,49 @@ a {
   background-color: #07C6EB;
   border: 2px solid #07C6EB;
 }
+
+.myButton {
+	-moz-box-shadow:inset 0px 0px 6px 0px #276873;
+	-webkit-box-shadow:inset 0px 0px 6px 0px #276873;
+	box-shadow:inset 0px 0px 6px 0px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size:17px;
+	padding:13px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+  color:#000000;
+
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 /*.selected a{
    -moz-box-shadow:    inset 0 0 10px #666;
@@ -812,12 +876,14 @@ ul ul {
   font-size: 16px;
 }
 
-li {
+ul li {
   margin: 0;
   list-style: none;
   font-size: 18px;
 }
 
+li {  font-family: 'Source Serif Pro', 'Book Antiqua', 'Palatino', sans-serif;
+}
 
 /* Navigation
 -------------------------------------*/
@@ -1066,7 +1132,7 @@ li {
 
 .banner-home {
   height: 250px;
-  background: url('../images/plymouth-bay.jpg') no-repeat center center;
+  background: url('../images/hero-plymouth-bay-lg.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1081,7 +1147,7 @@ li {
 @media (min-width: 400px) {
   .banner-home {
     height: 380px;
-    background: url('../images/plymouth-bay.jpg') no-repeat center center;
+    background: url('../images/hero-plymouth-bay-lg.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1480,7 +1546,24 @@ bg-blue-2 {
   }
 }
 
-/*------------VIDEO EMBED----------------*/
+/*------------VIDEO and iFRAME EMBED----------------*/
+iframe {
+  width: auto;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  iframe{
+    width: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  iframe {
+    width: 600px;
+  }
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
