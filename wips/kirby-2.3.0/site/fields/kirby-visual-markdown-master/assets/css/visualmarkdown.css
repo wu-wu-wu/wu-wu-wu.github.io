@@ -91,7 +91,7 @@
         text-decoration: underline;
     }
 
-    /* Inline Code & Code Blocks */
+    /* Inline Code &amp; Code Blocks */
     .cm-s-visualmarkdown .cm-comment:not(.cm-formatting-code):not(.cm-formatting-code-block) {
         font-family: Monaco, Consolas, monospace;
         font-size: 90%;

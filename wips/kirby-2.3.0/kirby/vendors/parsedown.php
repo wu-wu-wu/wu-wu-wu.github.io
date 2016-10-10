@@ -513,7 +513,7 @@ class Parsedown
                 ),
             );
 
-            $Block['element']['text'] []= & $Block['li'];
+            $Block['element']['text'] []= &amp; $Block['li'];
 
             return $Block;
         }
@@ -542,7 +542,7 @@ class Parsedown
                 ),
             );
 
-            $Block['element']['text'] []= & $Block['li'];
+            $Block['element']['text'] []= &amp; $Block['li'];
 
             return $Block;
         }

@@ -547,7 +547,7 @@
 
 			// Now we will compare. If it doesn't match the mask, we return false.
 			for ( $i = 0; $i < $pattern_len; ) {
-				$masked_data	= $sequence{$s} & $mask{$i};
+				$masked_data	= $sequence{$s} &amp; $mask{$i};
 
 				if ( $masked_data !== $pattern{$i} ) {
 					return false;
@@ -589,7 +589,7 @@
 
 			// Now we will compare. If it doesn't match the mask, we return false.
 			for (; $i < $pattern_len; ) {
-				$masked_data	= $sequence{$s} & $mask{$i};
+				$masked_data	= $sequence{$s} &amp; $mask{$i};
 
 				if ( $masked_data !== $pattern{$i} ) {
 					return false;

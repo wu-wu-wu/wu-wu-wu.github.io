@@ -2,7 +2,7 @@
 #
 # SmartyPants Typographer  -  Smart typography for web sites
 #
-# PHP SmartyPants & Typographer
+# PHP SmartyPants &amp; Typographer
 # Copyright (c) 2004-2013 Michel Fortin
 # <http://michelf.ca/>
 #
@@ -1054,7 +1054,7 @@ proper HTML entity for closing single-quotes (`&#8217;`) by hand.
 Copyright and License
 ---------------------
 
-PHP SmartyPants & Typographer  
+PHP SmartyPants &amp; Typographer  
 Copyright (c) 2004-2006 Michel Fortin  
 <http://www.michelf.com>  
 All rights reserved.

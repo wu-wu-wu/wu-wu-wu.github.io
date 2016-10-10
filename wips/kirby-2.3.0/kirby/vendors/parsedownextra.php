@@ -359,7 +359,7 @@ class ParsedownExtra extends Parsedown
             unset($Block['interrupted']);
         }
 
-        $Block['element']['text'] []= & $Block['dd'];
+        $Block['element']['text'] []= &amp; $Block['dd'];
 
         return $Block;
     }

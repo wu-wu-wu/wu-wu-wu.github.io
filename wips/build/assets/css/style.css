@@ -309,7 +309,7 @@ input:required:valid {
   background-color: white;
 }
 
-/* form valid & invalid : FOCUS */
+/* form valid &amp; invalid : FOCUS */
 input:focus:required:invalid {
   background: url('../images/sprite.png') no-repeat right -160px;;
   background-color: white;
@@ -320,7 +320,7 @@ input:focus:required:valid {
   background-color: white;
 }
 
-/* form valid & invalid : FOCUS #portfolioaddressinput*/
+/* form valid &amp; invalid : FOCUS #portfolioaddressinput*/
 input:focus:required:invalid {
 	background: url('../images/sprite.png') no-repeat right -160px;;
   background-color: white;

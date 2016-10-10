@@ -1160,7 +1160,7 @@ class SimpleImage {
         $minalpha = 127;
         for ($x = 0; $x < $w; $x++) {
             for ($y = 0; $y < $h; $y++) {
-                $alpha = (imagecolorat($src_im, $x, $y) >> 24) & 0xFF;
+                $alpha = (imagecolorat($src_im, $x, $y) >> 24) &amp; 0xFF;
                 if ($alpha < $minalpha) {
                     $minalpha = $alpha;
                 }
@@ -1172,7 +1172,7 @@ class SimpleImage {
             for ($y = 0; $y < $h; $y++) {
                 // Get current alpha value (represents the TANSPARENCY!)
                 $colorxy = imagecolorat($src_im, $x, $y);
-                $alpha = ($colorxy >> 24) & 0xFF;
+                $alpha = ($colorxy >> 24) &amp; 0xFF;
                 // Calculate new alpha
                 if ($minalpha !== 127) {
                     $alpha = 127 + 127 * $pct * ($alpha - 127) / (127 - $minalpha);
@@ -1180,7 +1180,7 @@ class SimpleImage {
                     $alpha += 127 * $pct;
                 }
                 // Get the color index with new alpha
-                $alphacolorxy = imagecolorallocatealpha($src_im, ($colorxy >> 16) & 0xFF, ($colorxy >> 8) & 0xFF, $colorxy & 0xFF, $alpha);
+                $alphacolorxy = imagecolorallocatealpha($src_im, ($colorxy >> 16) &amp; 0xFF, ($colorxy >> 8) &amp; 0xFF, $colorxy &amp; 0xFF, $alpha);
                 // Set pixel with the new color + opacity
                 if (!imagesetpixel($src_im, $x, $y, $alphacolorxy)) {
                     return;

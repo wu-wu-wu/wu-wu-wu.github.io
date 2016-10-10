@@ -87,7 +87,7 @@ class Escape {
    * 
    * ' is replaced with &apos;
    * " is replaced with &quot;
-   * & is replaced with &amp;
+   * &amp; is replaced with &amp;
    * < is replaced with &lt;
    * > is replaced with &gt;
    * 

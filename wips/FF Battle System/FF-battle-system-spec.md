@@ -7,7 +7,7 @@ Completely based off of [Deadlike2's FF4 Algorithms FAQ](http://www.gamefaqs.com
 	- primary v non-primary
 - Bow || Arrow
 	- Bow in primary v non-primary
-- non-bow & arrow weapons
+- non-bow &amp; arrow weapons
 - Yang
 - Edge
 - monsters
@@ -108,7 +108,7 @@ Deadly special modifier : Attack Power = Attack Power * 3
 	- primary v non-primary
 - Bow || Arrow
 	- Bow in primary v non-primary
-- non-bow & arrow weapons
+- non-bow &amp; arrow weapons
 - monsters
 
 ```

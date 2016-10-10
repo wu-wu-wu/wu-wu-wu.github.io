@@ -39,7 +39,7 @@
 
 **Features:**
 
-* Added Norwegian, Swedish & Danish languages (thanks to [@tnViking](https://github.com/tnViking))
+* Added Norwegian, Swedish &amp; Danish languages (thanks to [@tnViking](https://github.com/tnViking))
 * Added Dutch language (thanks to [@TECHMAUS](https://github.com/TECHMAUS))
 * Added "Email Link" toolbar item
 
@@ -131,7 +131,7 @@
 
 **New Features:**
 
-* Headline toolbar icons & actions
+* Headline toolbar icons &amp; actions
 * Option to specify the headline levels
 * Option to hide the toolbar
 

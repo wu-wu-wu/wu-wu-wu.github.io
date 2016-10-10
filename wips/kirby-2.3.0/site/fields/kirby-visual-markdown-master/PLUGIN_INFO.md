@@ -6,7 +6,7 @@ This Panel field plugin for [Kirby 2](http://getkirby.com) enables you to use an
 
 Generally, this extension is free to use on both personal and commercial Kirby powered sites. You don't *have* to pay for it. However, please always keep in mind that developing this extension took place in my spare time (and maybe a little bit of the time I should have spend on other work related stuff) and up until now, quite some hours have been spent on it..
 
-If you like what I'm doing for the community and you want to support further development of this and future extensions & plugins for Kirby CMS, please consider [purchasing a moral license](https://gumroad.com/l/visualmarkdown).
+If you like what I'm doing for the community and you want to support further development of this and future extensions &amp; plugins for Kirby CMS, please consider [purchasing a moral license](https://gumroad.com/l/visualmarkdown).
 
 **This is especially appreciated whenever you use one of the extensions in a project that you get payed for.**
 
@@ -19,7 +19,7 @@ If you like what I'm doing for the community and you want to support further dev
 
 ## Installation
 
-### Copy & Pasting
+### Copy &amp; Pasting
 
 If not already existing, add a new `fields` folder to your `site` directory. Then copy or link this repositories whole content in a new `markdown` folder there. Afterwards, your directory structure should look similar to this:
 
@@ -122,7 +122,7 @@ fields:
 * `image`
 * `line`
 
-### header1 & header2
+### header1 &amp; header2
 
 Specify the header levels to be used with the *H1* and *H2* toolbar buttons (`h1` to `h6`). Defaults to `header1: h1` and `header2: h2`.
 

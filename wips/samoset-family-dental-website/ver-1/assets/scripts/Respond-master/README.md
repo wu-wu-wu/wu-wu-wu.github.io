@@ -1,5 +1,5 @@
 # Respond.js
-### A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
+### A fast &amp; lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
 
  - Copyright 2011: Scott Jehl, scottjehl.com
 
@@ -33,7 +33,7 @@ CDN/X-Domain Setup
 Respond.js works by requesting a pristine copy of your CSS via AJAX, so if you host your stylesheets on a CDN (or a subdomain), you'll need to set up a local proxy to request the CSS for old IE browsers. Prior versions recommended a deprecated x-domain approach, but a local proxy is preferable (for performance and security reasons) to attempting to work around the cross-domain limitations.
 
 
-Support & Caveats
+Support &amp; Caveats
 ======
 
 Some notes to keep in mind:

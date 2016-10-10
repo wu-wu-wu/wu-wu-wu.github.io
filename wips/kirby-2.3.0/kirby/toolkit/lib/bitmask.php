@@ -20,7 +20,7 @@ class Bitmask {
    * @return boolean
    */
   public static function validValue($value) {
-    return is_int($value) && ($value & ($value - 1)) == 0;
+    return is_int($value) && ($value &amp; ($value - 1)) == 0;
   }
 
   /**
@@ -33,7 +33,7 @@ class Bitmask {
   public static function includes($value, $bitmask) {
     if(!static::validValue($value)) return false;
 
-    return ($bitmask & $value) !== 0;
+    return ($bitmask &amp; $value) !== 0;
   }
 
   /**

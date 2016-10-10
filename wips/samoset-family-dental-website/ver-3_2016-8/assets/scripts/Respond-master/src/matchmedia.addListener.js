@@ -1,4 +1,4 @@
-/*! matchMedia() polyfill addListener/removeListener extension. Author & copyright (c) 2012: Scott Jehl. Dual MIT/BSD license */
+/*! matchMedia() polyfill addListener/removeListener extension. Author &amp; copyright (c) 2012: Scott Jehl. Dual MIT/BSD license */
 (function( w ){
 	"use strict";
 	// Bail out for browsers that have addListener support

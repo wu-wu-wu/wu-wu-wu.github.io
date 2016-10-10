@@ -78,7 +78,7 @@
 	}
 	
 	function checkRedirectURL() {
-		// IE6 & IE7 don't build out absolute urls in <link /> attributes.
+		// IE6 &amp; IE7 don't build out absolute urls in <link /> attributes.
 		// So respond.proxy.gif remains relative instead of http://example.com/respond.proxy.gif.
 		// This trickery resolves that issue.
 		if (~ !redirectURL.indexOf(location.host)) {
