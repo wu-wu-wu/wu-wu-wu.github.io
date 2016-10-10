@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 	font-family: 'DINPro';
 	src: url('../fonts/DINPro-Medium.eot');
 	src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
@@ -38,38 +38,109 @@
 	font-style: normal;
 }
 
+/*-------------------fonts------------------*/
+/*---DINPro---*/
 @font-face {
-	font-family: 'Whitney';
-	src: url('../fonts/Whitney-Semibold.eot');
-	src: url('../fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('Whitney-Semibold.woff') format('woff'),
-		url('Whitney-Semibold.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+	font-family:'DINPro-CondBlack';
+	src: url('../fonts/DINPro-CondBlack/DINPro-CondBlack.eot');
+	src: url('../fonts/DINPro-CondBlack/DINPro-CondBlack.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-CondBlack/DINPro-CondBlack.woff') format('woff'),
+		url('../fonts/DINPro-CondBlack/DINPro-CondBlack.otf') format('opentype'),
+		url('../fonts/DINPro-CondBlack/DINPro-CondBlack.svg') format('svg');
+		font-weight: normal/*900*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+000D-FB02;
 }
 
-.font-whitney {
-  font-family: 'Whitney';
+@font-face {
+	font-family:'DINPro-Regular';
+	src: url('../fonts/DINPro-Regular/DINPro-Regular.eot');
+	src: url('../fonts/DINPro-Regular/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Regular/DINPro-Regular.woff') format('woff'),
+		url('../fonts/DINPro-Regular/DINPro-Regular.otf') format('opentype'),
+		url('../fonts/DINPro-Regular/DINPro-Regular.svg') format('svg');
+		font-weight: normal/*400*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+000D-FB02;
 }
 
-.font-dinpro {
-  font-family: 'DINPro';
+@font-face {
+	font-family:'DINPro-Medium';
+	src: url('../fonts/DINPro-Medium/DINPro-Medium.eot');
+	src: url('../fonts/DINPro-Medium/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Medium/DINPro-Medium.woff') format('woff'),
+		url('../fonts/DINPro-Medium/DINPro-Medium.otf') format('opentype'),
+		url('../fonts/DINPro-Medium/DINPro-Medium.svg') format('svg');
+		font-weight: normal/*500*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+000D-FB02;
+}
+
+@font-face {
+	font-family:'DINPro-Bold';
+	src: url('../fonts/DINPro-Bold/DINPro-Bold.eot');
+	src: url('../fonts/DINPro-Bold/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DINPro-Bold/DINPro-Bold.woff') format('woff'),
+		url('../fonts/DINPro-Bold/DINPro-Bold.otf') format('opentype'),
+		url('../fonts/DINPro-Bold/DINPro-Bold.svg') format('svg');
+		font-weight: normal/*700*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+000D-FB02;
+}
+
+/*---------Whitney--------*/
+@font-face {
+	font-family:'Whitney-Book';
+	src: url('../fonts/Whitney-Book/Whitney-Book.eot');
+	src: url('../fonts/Whitney-Book/Whitney-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Whitney-Book/Whitney-Book.woff') format('woff'),
+		url('../fonts/Whitney-Book/Whitney-Book.otf') format('opentype'),
+		url('../fonts/Whitney-Book/Whitney-Book.svg') format('svg');
+		font-weight: normal/*325*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+0020-FB04;
+}
+
+@font-face {
+	font-family:'Whitney-Semibold';
+	src: url('../fonts/Whitney-Semibold/Whitney-Semibold.eot');
+	src: url('../fonts/Whitney-Semibold/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Whitney-Semibold/Whitney-Semibold.woff') format('woff'),
+		url('../fonts/Whitney-Semibold/Whitney-Semibold.otf') format('opentype'),
+		url('../fonts/Whitney-Semibold/Whitney-Semibold.svg') format('svg');
+		font-weight: normal/*375*/;
+		font-style: normal;
+		font-stretch: normal;
+		unicode-range: U+0020-FB04;
+}
+
+.font-whitney-book {
+  font-family: 'Whitney-Book';
+}
+
+.font-whitney-semibold {
+  font-family: 'Whitney-Semibold';
+}
+
+.font-dinpro-regular {
+  font-family: 'DINPro-Regular';
+}
+
+.font-dinpro-medium {
+  font-family: 'DINPro-Medium';
+}
+
+.font-dinpro-bold {
+  font-family: 'DINPro-Bold';
 }
 
 .font-dinpro-condblack {
-font-family: DINPro-CondBlack;
-}
-
-.font-weight-300 {
-  font-weight: 300;
-}
-
-.font-weight-500 {
-  font-weight: 500;
-}
-
-.font-weight-700 {
-  font-weight: 700;
+	font-family: 'DINPro-CondBlack';
 }
 
 /* Grid via http://getskeleton.com
@@ -97,7 +168,7 @@ font-family: DINPro-CondBlack;
 }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media(min-width: 400px) {
   .container {
     width: 85%;
     padding: 0;
@@ -206,8 +277,8 @@ font-family: DINPro-CondBlack;
 }
 
 p, h1, h2, h3, h4, li, figure, blockquote {
-	font-family: 'Whitney';
-	font-weight: 300;
+	font-family: 'Whitney-Book';
+	font-weight:normal;
 }
 
 p {
@@ -285,18 +356,15 @@ nav ul li a:hover{
 
 blockquote {
 	font-size: 22px;
-	font-weight: 200;
 	margin-left: 20%;
 	margin: 1.3em 0 0 20%;
 	line-height: 1.28em;
-	font-family:'DINPro';
 }
 
 blockquote footer {
 	text-align: right;
 	text-transform: uppercase;
-	font-family: 'DINPro';
-	font-weight: 400;
+	font-family: 'DINPro-Regular';
 	font-size: 16px;
 }
 
@@ -306,7 +374,7 @@ strong {
 
 .current-tab {
   text-decoration: underline;
-	font-weight: 500;
+	font-family: 'DINPro-Bold';
 }
 
 .current-tab:hover {
@@ -413,18 +481,13 @@ button {
   letter-spacing: 2.5px;
 	text-decoration:none;
 	float:left;
-	font-family: 'DINPro';
-	font-weight: 600;
+	font-family: 'DINPro-Bold';
 }
 
 @media (min-width: 400px){
 	.txt-website-title {
 		text-transform: uppercase;
 	  font-size: 1.5rem;
-	  letter-spacing: 2.5px;
-	  float: left;
-		font-family: 'DINPro';
-		font-weight: 600;
 	}
 }
 
@@ -432,10 +495,6 @@ button {
 	.txt-website-title {
 	  text-transform: uppercase;
 	  font-size: 2rem;
-	  letter-spacing: 2.5px;
-	  float: left;
-		font-family: 'DINPro';
-		font-weight: 600;
 	}
 }
 
@@ -448,14 +507,13 @@ button {
 	color: #F7F2E5;
 }
 
-.txt-nav {
+.txt-nav li{
   letter-spacing: 1.4px;
-	font-family: 'DINPro';
-	font-weight: 500;
+	font-family: 'DINPro-Regular';
 }
 
 .txt-footer {
-	font-family: 'Whitney';
+	font-family: 'Whitney-Book';
 }
 
 .txt-footer-title {
@@ -476,24 +534,12 @@ button {
 @media (min-width: 400px) {
 	.txt-title {
 	  font-size: 6rem;
-	  top: -75px !important;
-	  margin: 0;
-	  text-transform: uppercase;
-	  z-index: 1;
-	  width: 30%;
-		font-family: 'DINPro-CondBlack';
 	}
 }
 
 @media (min-width: 700px) {
 	.txt-title {
 	  font-size: 9rem;
-	  top: -75px !important;
-	  margin: 0;
-	  text-transform: uppercase;
-	  z-index: 1;
-	  width: 30%;
-		font-family: 'DINPro-CondBlack';
 	}
 }
 
@@ -501,11 +547,6 @@ button {
 	.txt-title {
 		font-size: 14rem;
     top: -120px !important;
-	  margin: 0;
-	  text-transform: uppercase;
-	  z-index: 1;
-	  width: 30%;
-		font-family: 'DINPro-CondBlack';
 	}
 }
 
@@ -520,10 +561,9 @@ button {
 }
 
 .txt-resume-h1 {
-	font-family: 'DINPro';
+	font-family: 'DINPro-CondBlack';
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	font-weight: 500;
 	font-size: 21px;
 }
 
@@ -533,7 +573,7 @@ button {
 }
 
 .txt-resume-p {
-	font-family: 'Whitney';
+	font-family: 'Whitney-Book';
 	font-size: 17px;
 	line-height: 24px;
 }
@@ -838,7 +878,8 @@ button {
 .section-case-study header h2{
 	text-transform:uppercase;
 	font-size: 18px;
-	font-weight: 400;
+	font-family: 'DINPro-Regular';
+	font-weight: normal;
 	letter-spacing: .065em;
 	margin: 0 0 13px 0;
 }
@@ -866,15 +907,14 @@ line-height: 1.3em;
 
 .section-case-study h2 {
 	text-align:center;
-	font-family: 'DINPro';
-  font-weight: 500;
+	font-family: 'DINPro-Medium';
+	font-weight:normal;
 	margin: 2.1em 0 .8em 0;
 }
 
 .section-case-study h3 {
 	text-transform: uppercase;
-	font-family: 'DINPro';
-	font-weight: 600;
+	font-family: 'DINPro-Bold';
 	font-size: 15.75px;
 	letter-spacing: .02em;
 	margin: 34px 0 20px 0;
@@ -900,7 +940,7 @@ line-height: 1.3em;
 
 .section-case-study .section-case-study-contents {
 	font-size: 22px;
-	font-family: 'dinpro';
+	font-family: 'DINPro-Medium';
 	line-height: 1.6em;
 	text-align: center;
 }
