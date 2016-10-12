@@ -1,7 +1,0 @@
-# Use PHP5.4 as default
-# Changed PHP handler from application/x-httpd-php54 to application/x-httpd-phpbeta on Wed Dec 16 15:06:47 MST 2015.
-AddHandler application/x-httpd-phpbeta .php
-
-# BEGIN WordPress
-
-# END WordPress
