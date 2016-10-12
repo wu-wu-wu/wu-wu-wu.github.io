@@ -368,10 +368,6 @@ blockquote footer {
 	font-size: 16px;
 }
 
-strong {
-	font-weight: 400;
-}
-
 .current-tab {
   text-decoration: underline;
 	font-family: 'DINPro-Bold';
@@ -441,14 +437,24 @@ button {
 
 .img-width-68-center {
 	display: block;
-	width: 66%;
+	width: 100%;
 	margin: auto;
 }
 
 .img-width-80-center {
 	display: block;
-	width: 80%;
+	width: 100%;
 	margin: auto;
+}
+
+@media (min-width: 500px) {
+	.img-width-68-center {
+		width: 66%;
+	}
+
+	.img-width-80-center {
+		width: 80%;
+	}
 }
 
 .img-width-90 {
@@ -465,11 +471,16 @@ button {
 	vertical-align: 1px;
 }
 
-.txt-strong {
-	font-weight: 600;
+strong {
+	font-weight: 400;
 }
 
-.txt-strong-emphasis {
+.p-strong {
+	font-family: 'Whitney-Semibold';
+	font-weight: normal;
+}
+
+.p-strong-emphasis {
 	text-align: center;
 	font-size: 22px;
 	font-weight: 500;
@@ -842,8 +853,9 @@ button {
 
 .section-projects h2 {
 	font-size: 30px;
-	font-weight: 600;
+	font-weight: normal;
 	margin: 0 0 .08rem 0;
+	font-family: 'Whitney-Semibold';
 }
 
 .section-projects p{
@@ -872,7 +884,8 @@ button {
 
 .section-case-study header h1 {
 	font-size: 3em;
-	font-weight: 600;
+	font-weight: normal;
+	font-family:'Whitney-Book';
 }
 
 .section-case-study header h2{
