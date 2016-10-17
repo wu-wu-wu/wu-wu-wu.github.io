@@ -11,20 +11,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <header class="container">
-      <a href="index.html"><h1 class="txt-website-title padding-t-b-4">Suzanne Wu<div class="expendable"> <span>&#33298;&#28982;</span> + UX</div></h1></a>
-      <!--div class="container">
-        <div class="txt-hero">Suzanne is an interaction designer intended on helping people succeed.</div>
-        <button id="toggleSlider">Toggle Slider</button>
-      </div-->
-    <!-- START slide up toggle -->
-      <!-- navigation -->
-      <nav role="navigation">
+    <header class="header-container">
+      <div class="header-title">
+        <a href="index.html"><h1 class="txt-website-title padding-t-b-4">Suzanne Wu<div class="expendable"> <span>&#33298;&#28982;</span> + UX</div></h1></a>
+      </div>
+        <!--div class="container">
+          <div class="txt-hero">Suzanne is an interaction designer intended on helping people succeed.</div>
+          <button id="toggleSlider">Toggle Slider</button>
+        </div-->
+      <!-- START slide up toggle -->
+        <!-- navigation -->
+      <nav role="navigation" class="header-nav">
         <ul class="txt-nav right txt-transform-uppercase">
           <li><a class="color-occipital-bg current-tab">Occipital</a></li>
-          <li><a class="color-mono-1-bg current-tab" href="index.html">Work</a></li>
-          <li><a class="color-mono-2-bg" href="resume.html">Resume</a></li>
-          <li><a class="color-mono-3-bg" href="about.html">About</a></li>
+          <li><a class="color-mono-1-bg current-tab-2" href="index.html">Work</a></li>
+          <li><a class="color-mono-2-bg color-mono-1-txt" href="resume.html">Resume</a></li>
+          <li><a class="color-mono-3-bg color-mono-1-txt" href="about.html">About</a></li>
           <!--li><a class="color-mono-4-bg" href="blog.html">Blog</a></li-->
         </ul>
       </nav>
@@ -104,14 +106,14 @@
           <p class="section-case-study-lg-txt">1. Almost everyone skipped or skimmed the text tutorial</p>
           <p>The tutorial is entirely text and reads like a brick wall. Users just want to jump right in so they skip it but by skipping they were confused at how to use it properly. There was no way to go back to the tutorial except to restart the app.</p>
           <p class="section-case-study-lg-txt">2. The app feedback during the scan is confusing and unhelpful</p>
-          <p>The scan would often get displaced from users moving too fast, or it wouldn't register because users were standing too close or too far from the object they were scanning. <strong class="p-strong">Most resulted in less-than-satisfactory scans.</strong> This showed how the much the users' expectations differed from how the technology actually worked. </p>
+          <p>The scan would often get displaced from users moving too fast, or it wouldn't register because users were standing too close or too far from the object they were scanning. <strong class="p-strong">Most resulted in less-than-satisfactory scans. This showed how the much the users' expectations differed from how the technology actually worked. </p>
           <blockquote>"Either I'm doing it very wrong or it just doesn't do it very well."
           <footer>&mdash; Dave, developer</footer></blockquote>
           <p class="section-case-study-lg-txt">3. Users don't know for what purpose they would use the sensor.</p>
           <p>After the scan, users' interest would drop once they realized that the scan was indeed a close representation of what they scanned. Besides viewing the 3D model or emailing themselves the file, there wasn't much they could do.</p>
           <h3>C. Our Hypothesis</h3>
           <p>We found that overall there was a lot of uncertainty and self-doubt. Most people just weren't sure if they were performing the scan correctly. They identified the lack of feedback during the scan as the main cause for their uncertainty, and wished that they would receive more helpful coaching.</p>
-          <p>Our assumption from this is that <strong>usability issues, a difficult first-time experience</strong> and <strong>a lack of long-term purpose</strong> for the scanner are the main barrier to entry and the product's continued use.</p>
+          <p>Our assumption from this is that <p class="p-strong">usability issues, a difficult first-time experience and <p class="p-strong">a lack of long-term purpose for the scanner are the main barrier to entry and the product's continued use.</p>
           <ol>
             <li>Usability issues</li>
             <li>A difficult first-time experience</li>
@@ -122,7 +124,7 @@
           <h2 id="occipital-2">2. Testing Our Hypothesis</h2>
           <h3>D. IA Improvements</h3>
           <p>To test our hypothesis and proposed solution we first improved usability. We restructured the app's information architecture flow then we added helpful real-time feedback during scanning, and also increased the clarity and consistency of the UI elements.</p>
-          <p class="p-strong">Scanner App IA Before and After</strong></p>
+          <p class="p-strong">Scanner App IA Before and After</p>
         </div>
         <div class="container">
           <figure class="row">
@@ -150,25 +152,25 @@
             <figcaption>Above: User testing our prototype</figcaption>
           </figure>
           <p>Generally users saw the improvements we made as positive, and said it made the experience better.</p>
-          <p class="p-strong">However, users still couldn't see a purpose to use it beyond the first few times.</strong> One user said:</p>
+          <p class="p-strong">However, users still couldn't see a purpose to use it beyond the first few times. One user said:</p>
           <blockquote>
           3D apps have gotten a lot better... but I don't know why I would use them beyond taking 3D photos. "
           <footer>&mdash; Scott, developer</footer>
           </blockquote>
-          <p class="p-strong">Here is it. The crux of the problem.</strong></p>
+          <p class="p-strong">Here is it. The crux of the problem.</p>
           <p>Beyond the interface, beyond the usability, the core problem was in the goal of the app or rather, what goals are we helping our users to achieve? The current Scanner app, even when polished to the best version it can be and demonstrating the scanning functionality perfectly, still wouldn't be enough. For users to want to use the sensor as a tool and product they need it to solve their problem first.</p>
-          <p class="p-strong-emphasis"><strong>The problem was that the apps didn't solve anyone's problem.</strong></p>
+          <p class="p-strong">The problem was that the apps didn't solve anyone's problem.</p>
           <p>Even though Occipital developed these demo apps to demonstrate functionality and attract iOS developers for potential development &mdash; they are still consumers at heart and most would not spend the time, cost or effort on a new technology unless they also found a direct use for it in their lives or workflow.</p>
           <p>The successful adoption of technology is also dependent on the availability of complementary products. In the game console sale wars the winner is usually the one with the best games, or third-party development.</p>
-          <p>From this point-of-view &mdash; it becomes less about what cool new features are available but rather <strong>how it matches with our user's lives and needs.</strong></p>
-          <p class="p-strong">Our suggested next steps:</strong></p>
+          <p>From this point-of-view &mdash; it becomes less about what cool new features are available but rather <span class="p-strong">how it matches with our user's lives and needs.</span></p>
+          <p class="p-strong">Our suggested next steps:</p>
           <ol>
             <li>Package the sensor with a more consumer-grade app help solve an everyday problem for a group of users.</li>
             <li>Move the sample apps off the front page let them shine in the SDK &mdash; to prevent them from misrepresenting the product.</li>
             <li>Disseminating more sensors to interested parties to get them playing around with the SDK &mdash; potentially through a rental/resident/influencer program. Note the power of word of mouth!</li>
           </ol>
           <p>Occipital should focus on developing one polished and consumer-level app that serves an everyday need.</p>
-          <p class="p-strong">Redesigning the app for people who translate real-world object into 3D models all day</strong></p>
+          <p class="p-strong">Redesigning the app for people who translate real-world object into 3D models all day</p>
           <ol>
             <li>Identify need</li>
             <li>Market Research Analysis</li>
@@ -206,7 +208,7 @@
             <li>Accurate insights can be extrapolated from a few user interviews (qualitative over quantitative)</li>
             <li>Idea generation within different industries</li>
           </ul>
-          <!--p><strong>Artifacts:</strong></p>
+          <!--<p class="p-strong">Artifacts:</p>
           <ul>
             <li>GRAPH hardware adoption</li>
             <li>PERSONAS brief persona stories</li>

@@ -279,6 +279,7 @@
 p, h1, h2, h3, h4, li, figure, blockquote {
 	font-family: 'Whitney-Book';
 	font-weight:normal;
+	letter-spacing: 0;
 }
 
 p {
@@ -310,49 +311,105 @@ a:active {
 li {
 }
 
+.subheading{
+	text-transform: uppercase;
+	margin-bottom: -.5rem;
+	letter-spacing: .02rem;
+	font-size: .98rem;
+  font-family: 'DINPro-Bold';
+}
+
 .right {
   float: right !important;
 }
 
+.header-container {
+	position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+	padding: 0;
+  box-sizing: border-box;
+}
+
 nav ul {
-  margin-top: 20px;
   margin-bottom: 0;
   padding: 0;
+	display: flex;
+	width: 100%;
 }
 
 nav ul li{
   list-style-type: none;
-  float: left;
   padding: 0;
-}
-
-/* ! figure out z-index getting dropshadow to overlap with other elements*/
-nav ul li:hover{
-  /*
-  -webkit-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
-  -moz-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
-  box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
-  z-index: 20;*/
+	flex-grow: 1;
 }
 
 nav ul li a {
-  text-decoration: none;
-  display: block;
-  width: 130px;
-  line-height: 64px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+	text-decoration: none;
+	font-size: .7rem;
+	display: block;
+	padding: .6rem .6rem;
+	line-height: 1.2rem;
+	text-align: center;
+	font-family: 'DINPro-Regular';
 }
 
 nav ul li a:hover{
   text-decoration: underline;
-  z-index: 20;
-  /* fold */
-  -ms-transform: matrix(1, 0, 0.2, 1, -8, 0); /* IE 9 */
-  -webkit-transform: matrix(1, 0, 0.2, 1, -8, 0); /* Safari */
-  transform: matrix(1, 0, 0.2, 1, -8, 0);
 }
+
+@media (min-width: 600px) {
+	.header-container {
+		position: relative;
+	  width: 100%;
+	  max-width: 960px;
+	  margin: 0 auto;
+	  padding: 0 20px;
+	  box-sizing: border-box;
+	}
+
+	nav ul {
+		/* display: inline-block; */
+    float: right;
+    width: 40%;
+    /* font-size: 3.2rem; */
+	}
+
+	nav ul li{
+	  list-style-type: none;
+	  float: right;
+	  padding: 0;
+	}
+	/* ! figure out z-index getting dropshadow to overlap with other elements*/
+	nav ul li:hover{
+	  /*
+	  -webkit-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
+	  -moz-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
+	  box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
+	  z-index: 20;*/
+	}
+
+	nav ul li a {
+		text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    line-height: 2.75rem;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+	}
+
+	nav ul li a:hover{
+	  text-decoration: underline;
+	  z-index: 20;
+	  /* fold */
+	  -ms-transform: matrix(1, 0, 0.2, 1, -8, 0); /* IE 9 */
+	  -webkit-transform: matrix(1, 0, 0.2, 1, -8, 0); /* Safari */
+	  transform: matrix(1, 0, 0.2, 1, -8, 0);
+	}
+}
+
 
 blockquote {
 	font-size: 22px;
@@ -369,7 +426,7 @@ blockquote footer {
 }
 
 .current-tab {
-  text-decoration: underline;
+  text-decoration: none;
 	font-family: 'DINPro-Bold';
 }
 
@@ -488,17 +545,20 @@ strong {
 
 .txt-website-title {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: 2.5px;
 	text-decoration:none;
 	float:left;
+	padding: .5rem 0 .5rem .5rem !important;
 	font-family: 'DINPro-Bold';
+	transition: all .2s ease-in-out;
 }
 
 @media (min-width: 400px){
 	.txt-website-title {
 		text-transform: uppercase;
 	  font-size: 1.5rem;
+		padding:0;
 	}
 }
 
@@ -566,11 +626,28 @@ strong {
 }
 
 .txt-hero {
-  text-transform: uppercase;
-  border: 2px solid rgba(255, 0, 0, .7);
-  font-size: 80px;
+	text-transform: uppercase;
+	font-size: 2rem;
+	clear: both;
+	font-family: 'DINPro-Black';
+	line-height: 2.25rem;
+	margin: 0;
 }
 
+@media (min-width: 600px) {
+	.txt-hero {
+	    font-size: 5.2rem;
+	    line-height: 5rem;
+	    letter-spacing: -.05rem;
+		}
+}
+
+@media (min-width: 1500px) {
+	.txt-hero {
+		font-size: 7rem;
+		line-height: 6.4rem;
+	}
+}
 .txt-resume-h1 {
 	font-family: 'DINPro-CondBlack';
 	text-transform: uppercase;
@@ -692,11 +769,11 @@ strong {
   box-shadow: 0px 5px 14px 0px rgba(50, 50, 50, 0.68);
 }
 
-.effect-drop-shadow-hover:hover {
+/*.effect-drop-shadow-hover:hover {
   -webkit-box-shadow: 10px -9px 9px 0px rgba(50, 50, 50, 0.46);
   -moz-box-shadow:    10px -9px 9px 0px rgba(50, 50, 50, 0.46);
   box-shadow:         10px -9px 9px 0px rgba(50, 50, 50, 0.46);
-}
+}*/
 
 .current-tab .current-body {
   background-color: #21ec79;
@@ -838,6 +915,7 @@ strong {
 
 .section-projects a {
     text-decoration: none;
+		transition: all .2s ease-in-out;
 }
 
 .section-projects a:hover h2{
@@ -846,9 +924,10 @@ strong {
 
 .section-projects a:hover{
 	transform: scale(1.02);
-	-webkit-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
-  -moz-box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
-  box-shadow: 7px -8px 2px -2px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 38px -1px #242424;
+	-webkit-box-shadow: 0px 0px 38px -1px #242424;
+	-moz-box-shadow: 0px 0px 38px -1px #242424;
+	-o-box-shadow: 0px 0px 38px -1px #242424;
 }
 
 .section-projects h2 {
@@ -905,7 +984,6 @@ strong {
 	line-height: 26px;
 	font-weight: 200;
 	font-size: 17px;
-	letter-spacing: 0;
 }
 
 .section-case-study li {
@@ -1007,7 +1085,7 @@ line-height: 1.3em;
 
 .container-100 {
   margin: 0 auto;
-  height: 300px;
+  height: 15rem;
   text-align: center;
 }
 
@@ -1021,12 +1099,14 @@ line-height: 1.3em;
 
 @media (min-width: 600px) {
 	.container-50 {
-	  margin: 0 auto;
 	  display:inline-block;
-	  float: left;
 	  width: 50%;
 	  height: 300px;
 	  text-align: center;
+	}
+
+	.container-100 {
+	  height: 20rem;
 	}
 }
 
