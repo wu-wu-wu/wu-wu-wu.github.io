@@ -697,26 +697,27 @@ strong {
 }
 
 .txt-hero {
-	text-transform: uppercase;
 	font-size: 2rem;
 	clear: both;
-	font-family: 'DINPro-Bold';
+	font-family: 'Whitney-Light';
 	line-height: 2.25rem;
 	margin: 0;
 }
 
 @media (min-width: 600px) {
 	.txt-hero {
-	    font-size: 5.2rem;
-	    line-height: 5rem;
-	    letter-spacing: -.05rem;
-		}
+		font-size: 3.9rem;
+    line-height: 4rem;
+    letter-spacing: -.05rem;
+		width: 90%;
+	}
 }
 
 @media (min-width: 1500px) {
 	.txt-hero {
-		font-size: 7rem;
-		line-height: 6.4rem;
+		font-size: 5rem;
+    line-height: 5.4rem;
+		width: 82%;
 	}
 }
 .txt-resume-h1 {
