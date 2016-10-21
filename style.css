@@ -206,6 +206,74 @@
 
 }
 
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+	margin: .5rem 0 .5rem 0;
+	font-size: .9rem;
+  font-weight: normal;
+	font-family: 'DINPro-Bold';
+	text-transform: uppercase;
+	}
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin: 0 0 0 .5rem;
+  font-weight: normal;
+	font-size: 1rem;
+	font-family: 'Whitney-Book';
+	text-transform:none;}
+
 /* CSS Slide Up and Slide Down via Dang Van Thanh on https://codepen.io/dangvanthanh/pen/BsDbg */
 .slide {
   transition: .5s cubic-bezier(0, 1, 0.5, 1);
@@ -370,19 +438,31 @@ nav ul li a:hover{
 	}
 }
 
-
 blockquote {
-	font-size: 22px;
+	font-size: 1.5rem;
 	margin-left: 20%;
 	margin: 1.3em 0 0 20%;
 	line-height: 1.28em;
 }
 
+@media (min-width: 700px) {
+	blockquote {
+		font-size: 2.2rem;
+    line-height: 2.8rem;
+	}
+}
+
 blockquote footer {
 	text-align: right;
 	text-transform: uppercase;
-	font-family: 'DINPro-Regular';
-	font-size: 16px;
+	font-family: 'DINPro-medium';
+	font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+	blockquote footer {
+    font-size: 1.4rem;
+	}
 }
 
 .current-tab {
@@ -838,7 +918,7 @@ strong {
 }
 
 .bg-sfd {
-	background: url("images/thumb-sfd-1-5.jpg") no-repeat top center;
+	background: url("images/thumb-sfd-1-4.jpg") no-repeat top center;
   background-size:cover;
 }
 
@@ -872,6 +952,30 @@ strong {
   background-attachment: scroll, scroll;
 }
 
+.section-projects-thumb p{
+	margin: 2px 0 0 0;
+	text-transform: uppercase;
+	font-size: .8rem;
+}
+
+@media (min-width: 600px) {
+	.section-projects-thumb p{
+		margin: 2px 0 0 0;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+}
+
+.section-projects-thumb a:hover h2{
+	text-decoration: underline;
+}
+
+.section-projects-thumb h2 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0 0 .08rem 0;
+	font-family: 'Whitney-Semibold';
+}
 
 .section-projects a {
     text-decoration: none;
@@ -901,7 +1005,6 @@ strong {
 	margin: 2px 0 0 0;
 	text-transform: uppercase;
 	font-size: .8rem;
-	margin: 0 2rem;
 }
 
 @media (min-width: 600px) {
@@ -911,7 +1014,6 @@ strong {
 		font-size: 14px;
 	}
 }
-
 
 .section-case-study {
 
@@ -997,7 +1099,6 @@ line-height: 1.3em;
 }
 
 .section-about p{
-	font-size: 1.2em;
 	line-height: 1.4em;
 	margin: 0 0 .8em 0;
 }
