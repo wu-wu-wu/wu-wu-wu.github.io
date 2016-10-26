@@ -1230,7 +1230,7 @@ strong {
 
 /* padding top */
 .padding-t-1 {
-  padding-top: 1.5px;
+  padding-top: 1.5rem;
 }
 
 .padding-t-2{
@@ -1265,7 +1265,7 @@ strong {
 @media (min-width:600px) {
 	/* padding top */
 	.padding-t-1 {
-	  padding-top: 2.625px;
+	  padding-top: 2.625rem;
 	}
 
 	.padding-t-2{
