@@ -1520,18 +1520,18 @@ strong {
 }
 
 .section-case-study header h1 {
-	font-size: 3em;
-	font-weight: normal;
-	font-family:'Whitney-Book';
+  font-size: 3em;
+  font-weight: normal;
+  font-family: 'Whitney-Semibold';
 }
 
 .section-case-study header h2{
-	text-transform:uppercase;
-	font-size: 18px;
-	font-family: 'DINPro-Regular';
-	font-weight: normal;
-	letter-spacing: .065em;
-	margin: 0 0 13px 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: 'DINPro-Regular';
+  font-weight: normal;
+  letter-spacing: .065em;
+  margin: 0 0 13px 0;
 }
 
 .section-case-study header p{
@@ -1539,34 +1539,37 @@ strong {
 }
 
 .section-case-study p {
-	line-height: 26px;
-	font-weight: 200;
-	font-size: 17px;
+  line-height: 26px;
+  font-weight: 200;
+  font-size: 1.28em;
 }
 
 .section-case-study li {
-	margin-bottom: 12px;
-	font-size: 17px;
+  margin-bottom: 12px;
+  font-size: 1.28em;
   font-weight: 200;
-line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .section-case-study h1 {
 }
 
 .section-case-study h2 {
-	text-align:center;
-	font-family: 'DINPro-Medium';
-	font-weight:normal;
-	margin: 2.1em 0 .8em 0;
+  /* text-align: center; */
+  font-family: 'Whitney-book';
+  margin: 2em 0 .3em 0;
+  font-size: 3.2em;
+  /* line-height: 1.2em; */
 }
 
 .section-case-study h3 {
-	text-transform: uppercase;
-	font-family: 'DINPro-Bold';
-	font-size: 15.75px;
-	letter-spacing: .02em;
-	margin: 34px 0 20px 0;
+  text-transform: uppercase;
+  font-family: 'DINPro-Bold';
+  font-size: 1.2em;
+  letter-spacing: .02em;
+  margin: 10px 0 20px 0;
+  /* letter-spacing: .06em; */
+  /* text-align: center; */
 }
 
 .section-case-study .section-case-study-lg-txt {
@@ -1583,8 +1586,9 @@ line-height: 1.3em;
 }
 
 .section-case-study figcaption{
-	text-align:center;
-	margin: 10px 0 0 0;
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-size: 1.4em;
 }
 
 .section-case-study .section-case-study-contents {
