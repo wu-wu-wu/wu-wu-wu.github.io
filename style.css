@@ -551,27 +551,27 @@ h1, h2, h3, h4, h5, p {
 }
 
 .font-whitney-book {
-  font-family: 'Whitney-Book';
+  font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .font-whitney-semibold {
-  font-family: 'Whitney-Semibold';
+  font-family: 'Whitney-Semibold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .font-dinpro-regular {
-  font-family: 'DINPro-Regular';
+  font-family: 'DINPro-Regular', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .font-dinpro-medium {
-  font-family: 'DINPro-Medium';
+  font-family: 'DINPro-Medium', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .font-dinpro-bold {
-  font-family: 'DINPro-Bold';
+  font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .font-dinpro-condblack {
-	font-family: 'DINPro-CondBlack';
+	font-family: 'DINPro-CondBlack', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 /* Grid via http://getskeleton.com
@@ -728,7 +728,7 @@ legend {
 	margin: .5rem 0 .5rem 0;
 	font-size: .9rem;
   font-weight: normal;
-	font-family: 'DINPro-Bold';
+	font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
 	text-transform: uppercase;
 	}
 fieldset {
@@ -742,7 +742,7 @@ label > .label-body {
   margin: 0 0 0 .5rem;
   font-weight: normal;
 	font-size: 1rem;
-	font-family: 'Whitney-Book';
+	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 	text-transform:none;}
 
 /* CSS Slide Up and Slide Down via Dang Van Thanh on https://codepen.io/dangvanthanh/pen/BsDbg */
@@ -776,7 +776,7 @@ label > .label-body {
 }
 
 p, h1, h2, h3, h4, li, figure, blockquote {
-	font-family: 'Whitney-Book';
+	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 	font-weight:normal;
 	letter-spacing: 0;
 }
@@ -815,7 +815,7 @@ li {
 	margin-bottom: -.5rem;
 	letter-spacing: .02rem;
 	font-size: .98rem;
-  font-family: 'DINPro-Bold';
+  font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .right {
@@ -851,7 +851,7 @@ nav ul li a {
 	padding: .6rem .6rem;
 	line-height: 1.2rem;
 	text-align: center;
-	font-family: 'DINPro-Regular';
+	font-family: 'DINPro-Regular', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 nav ul li a:hover{
@@ -926,7 +926,7 @@ blockquote {
 blockquote footer {
 	text-align: right;
 	text-transform: uppercase;
-	font-family: 'DINPro-medium';
+	font-family: 'DINPro-medium', "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 1rem;
 }
 
@@ -938,7 +938,7 @@ blockquote footer {
 
 .current-tab {
   text-decoration: none;
-	font-family: 'DINPro-Bold';
+	font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .current-tab:hover {
@@ -1074,7 +1074,7 @@ strong {
 }
 
 .p-strong {
-	font-family: 'Whitney-Semibold';
+	font-family: 'Whitney-Semibold', "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: normal;
 }
 
@@ -1091,7 +1091,7 @@ strong {
 	text-decoration:none;
 	float:left;
 	padding: .5rem 0 .5rem .5rem !important;
-	font-family: 'DINPro-Bold';
+	font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
 	transition: all .2s ease-in-out;
 }
 
@@ -1121,11 +1121,11 @@ strong {
 
 .txt-nav li{
   letter-spacing: 1.4px;
-	font-family: 'DINPro-Regular';
+	font-family: 'DINPro-Regular', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .txt-footer {
-	font-family: 'Whitney-Book';
+	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .txt-footer-title {
@@ -1140,7 +1140,7 @@ strong {
   text-transform: uppercase;
   z-index: 1;
   width: 30%;
-	font-family: 'DINPro-CondBlack';
+	font-family: 'DINPro-CondBlack', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 @media (min-width: 400px) {
@@ -1170,7 +1170,7 @@ strong {
   font-size: 1.45rem;
   clear: both;
   line-height: 2.1rem;
-	font-family: 'Whitney-Book';
+	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 @media (min-width: 600px) {
@@ -1190,19 +1190,19 @@ strong {
 }
 
 .txt-resume-h1 {
-	font-family: 'DINPro-CondBlack';
+	font-family: 'DINPro-CondBlack', "Trebuchet MS", Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	font-size: 21px;
 }
 
 .txt-resume-h2 {
-	font-family: 'DINPro-CondBlack';
+	font-family: 'DINPro-CondBlack', "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 40px;
 }
 
 .txt-resume-p {
-	font-family: 'Whitney-Book';
+	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 17px;
 	line-height: 24px;
 }
@@ -1470,7 +1470,7 @@ strong {
 	font-size: 30px;
 	font-weight: normal;
 	margin: 0 0 .08rem 0;
-	font-family: 'Whitney-Semibold';
+	font-family: 'Whitney-Semibold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .section-projects a {
@@ -1494,7 +1494,7 @@ strong {
 	font-size: 30px;
 	font-weight: normal;
 	margin: 0 0 .08rem 0;
-	font-family: 'Whitney-Semibold';
+	font-family: 'Whitney-Semibold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .section-projects p{
@@ -1522,13 +1522,13 @@ strong {
 .section-case-study header h1 {
   font-size: 3em;
   font-weight: normal;
-  font-family: 'Whitney-Semibold';
+  font-family: 'Whitney-Semibold', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .section-case-study header h2{
   text-transform: uppercase;
   font-size: 1.2em;
-  font-family: 'DINPro-Regular';
+  font-family: 'DINPro-Regular', "Trebuchet MS", Helvetica, sans-serif;
   font-weight: normal;
   letter-spacing: .065em;
   margin: 0 0 13px 0;
@@ -1556,7 +1556,7 @@ strong {
 
 .section-case-study h2 {
   /* text-align: center; */
-  font-family: 'Whitney-book';
+  font-family: 'Whitney-book', "Trebuchet MS", Helvetica, sans-serif;
   margin: 2em 0 .3em 0;
   font-size: 3.2em;
   /* line-height: 1.2em; */
@@ -1564,7 +1564,7 @@ strong {
 
 .section-case-study h3 {
   text-transform: uppercase;
-  font-family: 'DINPro-Bold';
+  font-family: 'DINPro-Bold', "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.2em;
   letter-spacing: .02em;
   margin: 10px 0 20px 0;
@@ -1593,7 +1593,7 @@ strong {
 
 .section-case-study .section-case-study-contents {
 	font-size: 22px;
-	font-family: 'DINPro-Medium';
+	font-family: 'DINPro-Medium', "Trebuchet MS", Helvetica, sans-serif;
 	line-height: 1.6em;
 	text-align: center;
 }
@@ -1604,7 +1604,7 @@ strong {
 }
 
 .section-about h2 {
-	font-family: 'DINPro-CondBlack';
+	font-family: 'DINPro-CondBlack', "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 2.2em;
 	margin: .2em 0 .7em 0;
