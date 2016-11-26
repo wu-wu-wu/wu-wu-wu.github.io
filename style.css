@@ -308,16 +308,6 @@ label > .label-body {
 	font-family: 'Whitney-Book', "Trebuchet MS", Helvetica, sans-serif;
 	text-transform:none;}
 
-/* CSS Slide Up and Slide Down via Dang Van Thanh on https://codepen.io/dangvanthanh/pen/BsDbg */
-.slide {
-  transition: .5s cubic-bezier(0, 1, 0.5, 1);
-  transform: translateY(0);
-}
-
-.slide-up {
-  transform: translateY(-430px);
-}
-
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
@@ -682,7 +672,9 @@ strong {
 	color: #F7F2E5;
 }
 
-.txt-nav li{
+.txt-nav {
+  float: right !important;
+  text-transform: uppercase;
   letter-spacing: 1.4px;
 	font-family: 'DINPro-Regular', "Trebuchet MS", Helvetica, sans-serif;
 }
